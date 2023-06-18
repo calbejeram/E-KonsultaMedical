@@ -1,18 +1,5 @@
 body {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
-}
-
-#header {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    right: 0;
-    width: 100wv;
-    height: auto;
-}
-
-#contact {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,230,241,1) 0%, rgba(145,192,241,1) 45.5% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
 }
 
 #hero {
@@ -36,4 +23,9 @@ body {
 .card:hover {
     transform: scale(1.07);
     transition: 0.3s;
+}
+
+/* Footer contacts */
+#contact {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
 }
