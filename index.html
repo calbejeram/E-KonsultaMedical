@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Konsulta Medical</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-info">
+          <div class="container">
+              <a class="navbar-brand" href="#hero"><span class="text-white">E</span> - Konsulta <span class="text-primary">Medical</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                  <li class="nav-item" role="presentation">
+                    <a href="#hero" class="nav-link">
+                      <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#blogs" class="nav-link">
+                      <button class="nav-link rounded-5" id="blogs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Blogs</button>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#faqs" class="nav-link">
+                      <button class="nav-link rounded-5" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">FAQs</button>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#about" class="nav-link">
+                      <button class="nav-link rounded-5" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#contact" class="nav-link">
+                      <button class="nav-link rounded-5" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contacts</button>
+                    </a>
+                  </li>
+              </ul>
+              </div>
+          </div>
+      </nav>
+
+    </header>
+
+    <main>
+
+          <!-- Hero -->
+          <section id="hero">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center text-center rounded-3 hero-message">
+                    <div class="text-light pt-5">
+                        <h1 class="display-1"><span class="badge bg-info rounded-circle">E</span>-Konsulta 
+                            <span class="text-primary">Medical</span>
+                            <img src="icons/icons8-stethoscope-100.png" alt="Stethoscope Image Icon">
+                        </h1>
+                        <p class="lead py-2">
+                            Your online health buddy that helps you find your symptoms and give medical advices.
+                        </p>
+                        <a href="#main-content" class="btn btn-lg btn-info">
+                            Get Started
+                        </a>
+                        <p class="lead"><b>or simply</b></p>
+                        <div class="input-group my-3">
+                          <label for="input-group-text"></label>
+                          <input type="text" class="form-control rounded-1" placeholder="Search your symptoms" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn btn-info" type="button" id="button-addon2"><img src="icons/icons8-search-30.png" alt="Search Image Icon"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section id="main-content" class="my-5">
+          <div class="container py-5">
+            <div class="row g-3 mb-3">
+              <div class="col-lg-8">
+                <h2 class="text-center display-1">Your <span class="text-info">Health</span> matters to us</h2>
+                <h4 class="text-center"><span class="badge bg-info rounded-circle">
+                  E</span>
+                  - Konsulta <span class="text-primary">Medical</span>
+                </h4>
+                <p class="lead text-center">
+                  Health information that anyone can rely on and trust.
+                </p>
+                <p class="lead text-center">
+                  Get started on checking your symptoms to assess your needs, and find out what you should do next.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <a href="Illness and conditions/illness.html" class="card-link">
+                    <img src="images/maincontentimage1.jpg" class="card-img img-fluid h-100" alt="Illness and Conditions Image">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 text-white">
+                      <h5 class="card-title">
+                        <img src="icons/icons8-sick-70.png" alt="Sick Image Icon" class="bg-dark rounded-circle bg-opacity-50">
+                        Illness and Conditions
+                        <img src="icons/icons8-open-link-48.png" alt="Open Link Image Icon">
+                      </h5>
+                      <p class="card-text lead">Symptoms, causes and treatments of common illnesses and conditions. Includes injuries, infections and poisoning.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-lg-4">
+                <div class="card">
+                  <a href="test and treatments/treatments.html" class="card-link">
+                    <img src="images/maincontentimage3.png" class="card-img h-100" alt="Test and Treatments Image">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 text-white">
+                      <h5 class="card-title">
+                        <img src="icons/icons8-test-70.png" alt="Test Icon Image" class="bg-dark rounded-circle bg-opacity-50">
+                        Test and Treatments
+                        <img src="icons/icons8-open-link-48.png" alt="Open Link Icon">
+                      </h5>
+                      <p class="card-text lead">What to expect from common tests and treatments and why you might need them. Includes medicine, surgery, blood test, biopsy and scan., causes and treatments of common illnesses and conditions. Includes injuries, infections and poisoning.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <a href="healthy living/h-living.html" class="card-link">
+                    <img src="images/maincontentimage4.png" class="card-img h-100" alt="Healthy Living Image">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 text-white">
+                      <h5 class="card-title">
+                        <img src="icons/icons8-healthy-70.png" alt="Healthy Icon Image" class="bg-dark rounded-circle bg-opacity-50">
+                        Healthy Living
+                        <img src="icons/icons8-open-link-48.png" alt="Open Link Image">
+                      </h5>
+                      <p class="card-text lead">Advice and tools to help you look after yourself. Includes mental wellbeing, eating well, contraception, immunisation and help to stop smoking.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <a href="#" class="card-link">
+                    <img src="images/maincontentimage5.png" class="card-img h-100" alt="Care and Support Image">
+                    <div class="card-img-overlay bg-dark bg-opacity-50 text-white">
+                      <h5 class="card-title">
+                        <img src="icons/icons8-care-70.png" alt="Care Icon Image" class="bg-dark rounded-circle bg-opacity-50">
+                        Care and Support
+                        <img src="icons/icons8-open-link-48.png" alt="Open Link Image">
+                      </h5>
+                      <p class="card-text lead">Accessing health and care in Scotland. Includes how to register with a GP practice and your rights when using services.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Frequent Asked Questions -->
+        <section id="faqs" class="my-5">
+            <div class="container py-5">
+              <div class="row d-flex flex-column-reverse flex-lg-row">
+                <div class="col-md">
+                  <img src="images/faqsimage.jpg" alt="FAQs Image" class="img-fluid rounded-5">
+                </div>
+                <div class="col-md">
+                  <h2 class="text-center text-lg-start display-4">
+                    Frequently Asked 
+                    <span class="text-info">Questions</span>
+                    <img src="icons/icons8-faq-100.png" alt="FAQ Icon Image" class="d-none d-md-inline">
+                  </h2>
+                  <p class="lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quisquam vitae incidunt nihil! Reiciendis qui esse velit culpa sequi quia.
+                  </p>
+                  <!-- Accordion -->
+                  <div class="accordion accordion-flush mb-3 mb-lg-0" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="my-5">
+            <div class="container py-5">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md">
+                      <div class="text-center text-lg-start">
+                        <h2 class="display-4">About<img src="icons/icons8-about-100.png" alt="About Image Icon" class="d-none d-md-inline"></h2>
+                        <h2 class="display-5"><span class="badge bg-info rounded-circle">E</span> - Konsulta <span class="text-primary">Medical</span></h2>
+                      </div>
+                      <p class="lead">
+                        E-Konsulta Medical is for any users with any common symptoms and seeking medical assistance with ease and how they are going to deal with it. This website aims to give informations about their symptoms and how to prevent and treat their specific common diseases.
+                      </p>
+                    </div>
+                    <div class="col-md">
+                      <img src="images/aboutimage.png" alt="About Image" class="img-fluid rounded-5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4>
+                <h6>Help me improve this <span class="text-info">website</span> by sending a suggestion</h6>
+                <p>Fill out the form below.</p>
+                <div class="row g-5">
+                    <div class="col-md-12 col-lg-6 ">
+                      <form action="">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                              <label for="floatingInput">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                              <label for="floatingInput">Last Name</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box"></textarea>
+                          <label for="floatingTextarea">Comments or Suggestions</label>
+                        </div>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="d-grid my-3">
+                              <button class="btn btn-info" type="button">
+                                <img src="icons/icons8-paper-plane-30.png" alt="Send Icon Image">
+                                Send
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="d-grid my-3">
+                              <button class="btn btn-danger" type="button">
+                                <img src="icons/icons8-cancel-30.png" alt="Cancel Icon Image">
+                                Cancel 
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </form>
+                    <div class="col-4 col-lg-2">
+                      <h6>Contacts</h6>
+                      <a href="https://gmail.com"><img src="/mini project static website/icons/icons8-gmail-30.png" alt="Gmail Image Icon"></a>
+                      <a href="https://whatsapp.com"><img src="/mini project static website/icons/icons8-whatsapp-30.png" alt="Whastapp Image Icon"></a>
+                      <a href="https://facebook.com"><img src="/mini project static website/icons/icons8-facebook-30.png" alt="Facebook Image Icon"></a>
+                      <a href="https://twitter.com"><img src="/mini project static website/icons/icons8-twitter-30.png" alt="Twitter Image Icon"></a>
+                      <a href="https://instagram.com"><img src="/mini project static website/icons/icons8-instagram-30.png" alt="Instagram Image Icon"></a>
+                      
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <h6>Legals</h6>
+                      <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
+                      <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
+                      <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
+                    </div>
+                    <div class="col-4 col-lg-2">
+                      <h6>References</h6>
+                      <p><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">NHS inform</a></p>
+                      <p><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Bootstrap</a></p>
+                      <p><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Google</a></p>
+                      <p><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Youtube</a></p>
+                      <p><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Gradient Generator</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Allrights reserved &copy; <span class="badge rounded-circle bg-info">E</span> - Konsulta <span class="text-primary">Medical</span> 2023</p>
+            
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
