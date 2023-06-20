@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Illness and Conditions | E-Konsulta Medical</title>
 </head>
 <body>
@@ -69,10 +69,22 @@
                         </nav>
                     </div>
                     <div class="col-12">
-                        <h2 class="text-info bg-secondary p-3 rounded-2 d-none d-lg-block">
-                            <i class="bi bi-link-45deg"></i>
-                            Illness and Conditions
-                        </h2>
+                        <nav class="d-none d-lg-block">
+                            <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-secondary rounded-2" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-info); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                                <li class="nav-item" role="presentation">
+                                  <a href="/assets/pages/illness/illness.html" class="nav-link rounded-2 active fw-bold" id="home-tab2" role="tab" >Illness and Conditions</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a href="/assets/pages/symptoms/symptoms.html" class="nav-link rounded-2 fw-bold" id="profile-tab2">Symptoms and Self-help</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a href="/assets/pages/treatments/treatments.html" class="nav-link rounded-2 fw-bold" id="contact-tab2">Test and Treatments</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <a href="/assets/pages/healthy/h-living.html" class="nav-link rounded-2 fw-bold" id="contact-tab2">Healthy Living</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -84,19 +96,19 @@
                               <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
                                 <div class="accordion-body">
                                     <ul class="list-group list-group-flush">
-                                        <a href="symptoms.html" class="list-group-item list-group-item-action">
+                                        <a href="/assets/pages/symptoms/symptoms.html" class="list-group-item list-group-item-action">
                                             <h4>
                                                 <i class="bi bi-link-45deg"></i>
                                                 Symptoms and Self-help
                                             </h4>
                                         </a>
-                                        <a href="treatments.html" class="list-group-item list-group-item-action">
+                                        <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
                                             <h4>
                                                 <i class="bi bi-link-45deg"></i>
                                                 Test and Treatments
                                             </h4>
                                         </a>
-                                        <a href="h-living.html" class="list-group-item list-group-item-action">
+                                        <a href="/assets/pages/healthy/h-living.html" class="list-group-item list-group-item-action">
                                             <h4>
                                                 <i class="bi bi-link-45deg"></i>
                                                 Healthy Living
@@ -109,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+                <h2>Illness and Conditions</h2>
                 <p class="lead">
                     Symptoms, causes and treatments of common illnesses and conditions. Includes injuries, infections and poisoning.
                 </p>
@@ -116,161 +129,109 @@
         </section>
 
         <section class="p-2">
-            <div class="container">
-                <div class="row g-0 text-center g-3">
-                    <div class="col-12 col-lg-4 col-xl-4">
-                        <div class="list-group d-none d-lg-block text-start">
-                            <a href="symptoms.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Symptoms and Self-help
-                                </h4>
-                            </a>
-                            <a href="treatments.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Test and Treatments
-                                </h4>
-                            </a>
-                            <a href="h-living.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Healthy Living
-                                </h4>
-                            </a>
+            <div class="container p-3 bg-white rounded-2 mb-5">
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Ears, Nose, and Throat</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Illnesses, conditions and disorders of the ears, nose and throat.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="/assets/pages/illness/earsnosethroat.html">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 col-xl-8"> 
-                        <div class="overflow-auto accordion1">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        A to Z
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Find an illness or condition by name.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                              </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                            Ears, Nose, and Throat                                    
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes earache, sorethroat, vertigo, and laryngitis.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                            Eyes
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes conjunctivitis and deafblindness.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
-                                            Injuries
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>How to look after burns, cuts, bites, sprains and strains, and head injuries.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
-                                            Skin, Hair, and Nails
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes acne, psoriasis, ingrown toenails, warts, and verrucas.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
-                                            Sexual and Reproductive
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes sexually transmitted infections (STI's), erectile dysfunction and menopause.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseEighteen">
-                                            Stomach, Liver, and Gastrointestinal tract
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes indigestion, diarrhoea, coeliac disease and gastroentitis.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseNineteen">
-                                            Pregnancy and Childbirth
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Includes miscarriage, stillbirth, and sudden infant death syndrome (SIDS).</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Eyes</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Includes conjuntivitis and deafblindness.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="#">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Mouth</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Illnesses, infections and disorders of the lips, tongue, teeth and gums.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="#">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Heart and Blood Vesels</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Includes heart attacks, heart disease, angina and blood clots.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="#">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Muscle, Bones, and Joints</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Physiotherapy can help you manage muscle, bone and joint problems. Read about musculoskeletal (MSK) conditions and self-management advice.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="#">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <div class="card border-info border-3 h-100">
+                            <div class="card-header">
+                                <h5 class="card-title">
+                                    <i class="bi bi-link-45deg"></i>Kidneys, Bladder and Prostate</h5>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">Includes kidney stones, cystitis, urinary tract infections and incontinence.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="icon-link icon-link-hover" href="#">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -284,7 +245,7 @@
           <section id="contact" class="py-5">
               <div class="container">
                 <!-- Contact and Form Label -->
-                  <h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4>
+                  <a href="/#" class="text-decoration-none"><h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4></a>
                   <h6>Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
                   <p>Fill out the form below.</p>
                   <div class="row g-5">

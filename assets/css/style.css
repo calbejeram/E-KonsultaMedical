@@ -18,11 +18,11 @@ body {
     height: 300px;
 }
 
-.card {
+.main-card {
     transition: 0.3s;
 }
 
-.card:hover {
+.main-card:hover {
     transform: scale(1.07);
     transition: 0.3s;
 }
