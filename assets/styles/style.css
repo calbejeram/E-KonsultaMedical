@@ -1,0 +1,33 @@
+body {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+}
+
+/* Header */
+
+#hero {
+    background: url(/assets/images/heroimage.jpg) center center/ cover;
+    height: 100vh;
+}
+
+.hero-message {
+    height: 90vh;
+}
+
+/* Main Content Cards */
+.card .card-link {
+    height: 300px;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+/* Footer contacts */
+#contact {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
