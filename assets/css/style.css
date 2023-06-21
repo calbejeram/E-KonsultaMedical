@@ -31,3 +31,28 @@ body {
 #contact {
     background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
 }
+
+.atoz-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+.atoz-links .letter {
+    width: 49px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px 0px;
+}
+
+.atoz-links .letter:hover {
+    background-color: rgb(167, 250, 250);
+}
+
+.disabled-letter a {
+    color: red;
+}
+

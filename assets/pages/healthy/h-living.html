@@ -22,7 +22,7 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
                           <li class="nav-item" role="presentation">
-                          <a href="index.html" class="nav-link">
+                          <a href="/index.html" class="nav-link">
                               <button class="nav-link" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
                           </a>
                           </li>
@@ -54,46 +54,53 @@
     </header>
 
     <main>
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/#main-content">
-                                <i class="bi bi-clipboard-check"></i>
-                                Get Started
-                              </a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Healthy Living</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-12">
-                        <h2 class="text-info bg-secondary p-3 rounded-2 d-none d-lg-block">
-                            <i class="bi bi-link-45deg"></i>
-                            Healthy Living
-                        </h2>
-                        <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed text-info bg-secondary p-3 rounded-2 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <i class="bi bi-link-45deg"></i>
-                                    Healthy Living
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-                                <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
-                                        <a href="/assets/pages/illness/illness.html" class="list-group-item list-group-item-action">
+        <!-- Navigators -->
+          <section class="p-2">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                              <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/#main-content">
+                                  <i class="bi bi-clipboard-check"></i>
+                                  Get Started
+                                </a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Healthy Living</li>
+                              </ol>
+                          </nav>
+                      </div>
+                      <div class="col-12">
+                          <nav class="d-none d-lg-block">
+                              <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-secondary rounded-2" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-info); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                                  <li class="nav-item" role="presentation">
+                                    <a href="/assets/pages/illness/illness.html" class="nav-link rounded-2 fw-bold" id="home-tab2" role="tab" >Illness and Conditions</a>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <a href="/assets/pages/symptoms/symptoms.html" class="nav-link rounded-2 fw-bold" id="profile-tab2">Symptoms and Self-help</a>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <a href="/assets/pages/treatments/treatments.html" class="nav-link rounded-2 fw-bold" id="contact-tab2">Test and Treatments</a>
+                                  </li>
+                                  <li class="nav-item" role="presentation">
+                                    <a href="/assets/pages/healthy/h-living.html" class="nav-link rounded-2 active fw-bold" id="contact-tab2">Healthy Living</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                          <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed text-info bg-secondary p-3 rounded-2 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      <i class="bi bi-link-45deg"></i>
+                                      Healthy Living
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                                  <div class="accordion-body">
+                                      <ul class="list-group list-group-flush">
+                                          <a href="/assets/pages/illness/illness.html" class="list-group-item list-group-item-action">
                                             <h4>
                                                 <i class="bi bi-link-45deg"></i>
-                                                Illness and Conditions
-                                            </h4>
-                                        </a>
-                                        <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
-                                            <h4>
-                                                <i class="bi bi-link-45deg"></i>
-                                                Test and Treatments
+                                                 Ilness and Conditions
                                             </h4>
                                         </a>
                                         <a href="/assets/pages/symptoms/symptoms.html" class="list-group-item list-group-item-action">
@@ -102,182 +109,138 @@
                                                 Symptoms and Self-help
                                             </h4>
                                         </a>
-                                    </ul>
+                                        <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
+                                            <h4>
+                                                <i class="bi bi-link-45deg"></i>
+                                                Test and Treatments
+                                            </h4>
+                                        </a>
+                                      </ul>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p class="lead">
+                          </div>
+                      </div>
+                  </div>
+                  <h2 class="mt-3">Healthy Living</h2>
+                  <p class="lead">
                     Advice and tools to help you look after yourself. Includes mental wellbeing, eating well, contraception, immunisation and help to stop smoking.
-                </p>
-            </div>
-        </section>
-
-        <section class="p-2">
-            <div class="container">
-                <div class="row g-0 text-center g-3">
-                    <div class="col-12 col-lg-4 col-xl-4">
-                        <div class="list-group d-none d-lg-block text-start">
-                            <a href="/assets/pages/illness/illness.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Illness and Conditions
-                                </h4>
-                            </a>
-                            <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Test and Treatments
-                                </h4>
-                            </a>
-                            <a href="/assets/pages/symptoms/symptoms.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                    <i class="bi bi-link-45deg"></i>
-                                    Symptoms and Self-help
-                                </h4>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 col-xl-8"> 
-                        <div class="overflow-auto accordion1">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Alcohol
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Having a responsible relationship with alcohol.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Contraception
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Find out the different methods of contraception, how to use it, where to get it, and which is right for you.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Dental Health
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Find out how to achieve and maintain good dental health in both children and adults.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                            Drug and Drug use
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>What you need to know about drug use, avoiding an overdose, dependency and where to find help and support.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                            Food and Nutritions
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Information on how to eat a healthy, balanced diet, food labeling and weight loss.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                            Stopping smoking
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Including the benefits of quitting and the support available to stop.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                            Mental Wellbeing
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Advice dealing with low mood, anxiety, phobias stress, and where you can get help.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                            Immunisation
-                                         </button>
-                                    </h2>
-                                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Your guide to immunisation in Philippines, and the vaccines used to protect you and your child throughout your lives.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                                See more
-                                                <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                  </p>
+              </div>
+          </section>
+  
+          <!-- Cards -->
+          <section class="p-2">
+              <div class="container p-3 bg-white rounded-2 mb-5">
+                  <div class="row g-3 mb-3">
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Alcohol</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Information on drinking sensibly, knowing your limits and getting support for alcohol abuse</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/treatments-atoz.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Dental health</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Information on cleaning your teeth, visiting the dentist, coping with a fear of the dentist and caring for your child's dental health.</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/blood-test.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Contraception</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Find out about the different methods of contraception, how to use it, where to get it and which is right for you</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/biopsis.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row g-3">
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Drugs and drug use</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">It's important to know more about the substances you're taking and how to get support</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/scanxrays.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Food and nutrition</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Eating a healthy balanced diet can help to prevent diet-related illness and will give you all of the energy and nutrients you need keep active and maintain a healthy weight. Find out how much of the different food groups you should eat and how they can benefit your health.</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/dental.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4">
+                          <div class="card border-info border-3 h-100">
+                              <div class="card-header">
+                                  <h5 class="card-title">
+                                      <i class="bi bi-link-45deg"></i>Immunisation</h5>
+                              </div>
+                              <div class="card-body">
+                                <p class="card-text">Immunisations help protect against serious, vaccine preventable diseases.</p>
+                              </div>
+                              <div class="card-footer">
+                                  <a class="icon-link icon-link-hover" href="/assets/pages/treatments/emergencies.html">
+                                      Learn more
+                                      <i class="bi bi-arrow-right"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
 
     <footer>
         <!-- Footer Section -->

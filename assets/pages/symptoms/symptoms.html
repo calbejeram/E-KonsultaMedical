@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
                         <li class="nav-item" role="presentation">
-                        <a href="index.html" class="nav-link">
+                        <a href="/index.html" class="nav-link">
                             <button class="nav-link" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
                         </a>
                         </li>
@@ -54,149 +54,139 @@
     </header>
 
     <main>
+        <!-- Navigators -->
         <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/#main-content">
-                                <i class="bi bi-clipboard-check"></i>
-                                Get Started
-                              </a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Symptoms and Self-help</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <div class="col-12">
-                        <h2 class="text-info bg-secondary p-3 rounded-2 d-none d-lg-block">
-                          <i class="bi bi-link-45deg"></i>
-                            Symptoms and Self-help
-                        </h2>
-                        <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed text-info bg-secondary p-3 rounded-2 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/#main-content">
+                              <i class="bi bi-clipboard-check"></i>
+                              Get Started
+                            </a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Symptoms and Self-help</li>
+                          </ol>
+                      </nav>
+                  </div>
+                  <div class="col-12">
+                      <nav class="d-none d-lg-block">
+                          <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-secondary rounded-2" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-info); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                              <li class="nav-item" role="presentation">
+                                <a href="/assets/pages/illness/illness.html" class="nav-link rounded-2 fw-bold" id="home-tab2" role="tab" >Illness and Conditions</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="/assets/pages/symptoms/symptoms.html" class="nav-link rounded-2 active fw-bold" id="profile-tab2">Symptoms and Self-help</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="/assets/pages/treatments/treatments.html" class="nav-link rounded-2 fw-bold" id="contact-tab2">Test and Treatments</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <a href="/assets/pages/healthy/h-living.html" class="nav-link rounded-2 fw-bold" id="contact-tab2">Healthy Living</a>
+                              </li>
+                          </ul>
+                      </nav>
+                      <div class="accordion accordion-flush d-lg-none d-md-block" id="accordionFlushExample1">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed text-info bg-secondary p-3 rounded-2 fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
                                   <i class="bi bi-link-45deg"></i>
-                                    Symptoms and Self-help
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
-                                <div class="accordion-body">
-                                    <ul class="list-group list-group-flush">
+                                  Symptoms and Self-help
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample1">
+                              <div class="accordion-body">
+                                  <ul class="list-group list-group-flush">
                                       <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
                                           <h4>
-                                            <i class="bi bi-link-45deg"></i>
+                                              <i class="bi bi-link-45deg"></i>
                                               Test and Treatments
                                           </h4>
                                       </a>
                                       <a href="/assets/pages/healthy/h-living.html" class="list-group-item list-group-item-action">
                                           <h4>
-                                            <i class="bi bi-link-45deg"></i>
+                                              <i class="bi bi-link-45deg"></i>
                                               Healthy Living
                                           </h4>
                                       </a>
                                       <a href="/assets/pages/illness/illness.html" class="list-group-item list-group-item-action">
-                                          <h4>
+                                        <h4>
                                             <i class="bi bi-link-45deg"></i>
-                                              Illness and Conditions
-                                          </h4>
-                                      </a>
-                                    </ul>
-                                </div>
+                                            Illness and Conditions
+                                        </h4>
+                                    </a>
+                                  </ul>
                               </div>
                             </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <h2 class="mt-3">Symptoms and self-help</h2>
+              <p class="lead">
+                Information on common symptoms and what to do about them. Includes stomach ache, headache and rash.
+              </p>
+          </div>
+      </section>
+      
+       <!-- Cards -->
+       <section class="p-2">
+        <div class="container p-3 bg-white rounded-2 mb-5">
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border-info border-3 h-100">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="bi bi-link-45deg"></i>A to Z</h5>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">A to Z of symptoms - including headache, stomach ache and flu.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="icon-link icon-link-hover" href="/assets/pages/symptoms/symptomsatoz.html">
+                                Learn more
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <p class="lead">
-                  Information on common symptoms and what to do about them. Includes stomach ache, headache and rash.
-                </p>
-            </div>
-        </section>
-
-        <section class="p-2">
-            <div class="container">
-                <div class="row g-0 text-center g-3">
-                    <div class="col-12 col-lg-4 col-xl-4">
-                        <div class="list-group d-none d-lg-block text-start">
-                            <a href="/assets/pages/treatments/treatments.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                  <i class="bi bi-link-45deg"></i>
-                                    Test and Treatments
-                                </h4>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border-info border-3 h-100">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="bi bi-link-45deg"></i>Body parts</h5>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">List of symptoms and self-help guides by body part - including headache, stomach ache and flu.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="icon-link icon-link-hover" href="/assets/pages/symptoms/bodyparts.html">
+                                Learn more
+                                <i class="bi bi-arrow-right"></i>
                             </a>
-                            <a href="/assets/pages/healthy/h-living.html" class="list-group-item list-group-item-action">
-                                <h4>
-                                  <i class="bi bi-link-45deg"></i>
-                                    Healthy Living
-                                </h4>
-                            </a>
-                            <a href="/assets/pages/illness/illness.html" class="list-group-item list-group-item-action">
-                              <h4>
-                                <i class="bi bi-link-45deg"></i>
-                                  Illness and Conditions
-                              </h4>
-                          </a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 col-xl-8"> 
-                        <div class="overflow-auto accordion1">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        A to Z
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>A to Z of symptoms - including headache, stomach ache, and flu.</p>
-                                            <a class="icon-link" href="">
-                                              See more
-                                              <i class="bi bi-box-arrow-up-right"></i>
-                                          </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                            Body Parts                                  
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Symptoms and self-help guides by body part.</p>
-                                            <a class="icon-link" href="">
-                                              See more
-                                              <i class="bi bi-box-arrow-up-right"></i>
-                                           </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                            Self-help Guides
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body text-start">
-                                            <p>Search for self-help guides by name and check your symptoms.</p>
-                                            <a class="icon-link" href="a-z.html">
-                                              See more
-                                              <i class="bi bi-box-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card border-info border-3 h-100">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="bi bi-link-45deg"></i>Self-help guides</h5>
+                        </div>
+                        <div class="card-body">
+                          <p class="card-text">Search for self-help guides by name and check your symptoms.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="icon-link icon-link-hover" href="/assets/pages/symptoms/self-help-guides.html">
+                                Learn more
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+      </section>
     </main>
 
     <footer>
