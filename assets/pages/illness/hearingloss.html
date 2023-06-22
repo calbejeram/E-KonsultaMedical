@@ -1,343 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="icon"
+      href="/assets/images/logobrand.png"
+      type="image/icon type"
+    />
     <title>Hearing Loss | Ears, Nose, and Throat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Navbar -->
-        <section id="header">
-            <nav class="navbar navbar-expand-lg bg-info">
-              <div class="container">
-                  <a class="navbar-brand" href="/#">E-Konsulta</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-                          <li class="nav-item" role="presentation">
-                          <a href="/index.html" class="nav-link">
-                              <button class="nav-link" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#blogs" class="nav-link">
-                              <button class="nav-link" id="blogs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Blogs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#faqs" class="nav-link">
-                              <button class="nav-link" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">FAQs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#about" class="nav-link">
-                              <button class="nav-link" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="#contact" class="nav-link">
-                              <button class="nav-link" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contacts</button>
-                          </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-            </nav>
-          </section>
+      <!-- Navbar -->
+      <section id="header">
+        <nav class="navbar navbar-expand-lg bg-info">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-5" href="/#"
+              ><img
+                src="/assets/images/logobrand.png"
+                alt=""
+                style="width: 50px"
+              />E-Konsulta</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row"
+                id="pillNav2"
+                role="tablist"
+                style="
+                  --bs-nav-link-color: var(--bs-white);
+                  --bs-nav-pills-link-active-color: var(--bs-primary);
+                  --bs-nav-pills-link-active-bg: var(--bs-white);
+                "
+              >
+                <li class="nav-item" role="presentation">
+                  <a href="/index.html" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="home-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      <i class="bi bi-house"></i>
+                      Home
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#faqs" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="faqs-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-patch-question"></i>
+                      FAQs
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#about" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="about-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-file-person"></i>
+                      About
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="#contact" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="contacts-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-person-rolodex"></i>
+                      Contacts
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <main>
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/#main-content">
-                                <i class="bi bi-clipboard-check"></i>
-                                Get Started
-                              </a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/illness/illness.html">Illness and Conditions</a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/illness/earsnosethroat.html">Ears, Nose, and Throat</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Hearing Loss</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-md-block d-lg-none">
-                        <div class="accordion accordion-flush mb-3" id="accordion-page">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#on-this-page1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <b><i class="bi bi-file-break"></i>On this Page </b>
-                                </button>
-                              </h2>
-                              <div id="on-this-page1" class="accordion-collapse collapse" data-bs-parent="#accordion-page">
-                                <div class="accordion-body">
-                                    <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page" data-bs-smooth-scroll="true" tabindex="0">
-                                        <div id="on-this-page" class="list-group">
-                                            <a class="list-group-item list-group-item-action" href="#list-item-1">About Hearing Loss</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-2">When to see your GP?</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-3">Why it happens</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-4">Preventing hearing loss</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-5">Treating hearing loss</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
-                        <img src="/assets/images/hearingloss.png" alt="Hearing Loss image" class="img-fluid mb-4">
-                        <h2 id="list-item-1"><mark>About Hearing Loss</mark></h2>
-                        <p>Hearing loss is a common problem that often develops with age or is caused by repeated exposure to loud noises.</p>
-                        <p>Action on Hearing Loss estimates that there are more than 10 million (about 1 in 6) people in the UK with some degree of hearing impairment or deafness.</p>
-                        <p>Hearing loss can occur suddenly, but usually develops gradually. General signs of hearing loss can include:</p>
-                        <ul>
-                            <li>
-                                <p>difficulty hearing other people clearly and misunderstanding what they say.</p>
-                            </li>
-                            <li>
-                                <p>asking people to repeat themselves.</p>
-                            </li>
-                            <li>
-                                <p>listening to music or watching television with the volume turned up higher than other people require.</p>
-                            </li>
-                        </ul>
-
-                        <br>
-
-                        <h2 id="list-item-2"><mark>When to see your <abbr title="Generic Pharmacy">GP?</abbr></mark></h2>
-                        <p>
-                            See your GP if you're having problems with your hearing, or your child is showing signs of hearing difficulty. If you lose your hearing suddenly, in one or both ears, you must see your GP as soon as possible.
-                        </p>
-                        <p>Your GP can check for any problems and may refer you to an audiologist (hearing specialist) or an ENT surgeon for further tests.</p>
-                        <p>You can also visit the Action on Hearing Loss website for an online hearing test.</p>
-                        
-                        <br>
-
-                        <h3 id="list-item-3"><mark>Why it happens</mark></h3>
-                        <p>Hearing loss is the result of sound signals not reaching the brain. There are two main types of hearing loss, depending on where the problem lies:</p>
-                        <ul>
-                            <li>
-                                <p>sensorineural hearing loss caused by damage to the sensitive hair cells inside the inner ear or damage to the auditory nerve; this occurs naturally with age or as a result of injury</p>
-                            </li>
-                            <li>
-                                <p>conductive hearing loss when sounds are unable to pass from your outer ear to your inner ear, often because of a blockage such as earwax, glue ear or a build-up of fluid from an ear infection, or because of a perforated ear drum or disorder of the hearing bones</p>
-                            </li>
-                        </ul>
-
-                        <p>It's also possible to have both these types of hearing loss. This is known as mixed hearing loss.</p>
-                        <p>Some people are born with hearing loss, but most cases develop as you get older. </p>
-
-                        <br>
-
-                        <h2 id="list-item-4"><mark>Preventing hearing loss</mark></h2>
-                        <p>It isn't always possible to prevent hearing loss if you have an underlying condition that causes you to lose your hearing.</p>
-                        <p>However, there are several things you can do to reduce the risk of hearing loss from long-term exposure to loud noise. This includes not having music or the television on at a loud volume at home and using ear protection at loud music events or in noisy work environments.</p>
-                        <p>You should also see your GP if you have signs of an ear infection, such as flu-like symptoms, severe earache, discharge or hearing loss.</p>
-
-                        <br>
-
-                        <h2 id="list-item-5"><mark>Treating hearing loss</mark></h2>
-                        <p>The way hearing loss is treated depends on the cause and how severe it is.</p>
-                        <p>In cases of sensorineural hearing loss, there are several options that may help to improve a persons ability to hear and communicate. These include:</p>
-                        <ul>
-                            <li>
-                                <p>digital hearing aids - which are available through the NHS</p>
-                            </li>
-                            <li>
-                                <p>bone anchored implants - suitable for people who are unable to use hearing aids and for some levels of sensorineural hearing loss</p>
-                            </li>
-                            <li>
-                                <p>middle ear implants - suitable for some people who are unable to use hearing aids</p>
-                            </li>
-                            <li>
-                                <p>cochlear implants - for people who find hearing aids aren't powerful enough</p>
-                            </li>
-                            <li>
-                                <p>lip reading and/or sign language - such as British Sign Language (BSL)</p>
-                            </li>
-                        </ul>
-
-                        <p>
-                            Conductive hearing loss is sometimes temporary and can be treated with medication or minor surgery, if necessary. However, more major surgery may be required to fix the ear drum or hearing bones. If conventional hearing aids don't work, there are also some implantable devices for this type of hearing loss, such as a Bone Anchored Hearing Aids (BAHAs).
-                        </p>
-
-                        <br>
-                    </div>
-                    <div class="col-lg-3 d-none d-lg-block scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page2" data-bs-smooth-scroll="true" tabindex="0">
-                        <div id="on-this-page2" class="list-group">
-                            <h5>
-                                <i class="bi bi-file-break"></i>
-                                On this page
-                            </h5>
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">About Hearing Loss</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">When to see your GP?</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">Why it happens</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">Preventing hearing loss</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-5">Treating hearing loss</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-7 my-3 col-md-8 col-lg-7">
-                      <h5>Was this page helpful?</h5>
-                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-hand-thumbs-up"></i></label>
-                        
-                          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                          <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-hand-thumbs-down"></i></label>
-                      </div>
-                  </div>
-                  <div class="col-5 mt-3 col-md-4 col-lg-5">
-                    <a class="btn btn-primary" href="#" role="button">
-                      <i class="bi bi-arrow-up-square"></i>
-                      Back to top
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/#main-content">
+                      <i class="bi bi-clipboard-check"></i>
+                      Get Started
                     </a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/illness/illness.html"
+                      >Illness and Conditions</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/illness/earsnosethroat.html"
+                      >Ears, Nose, and Throat</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Hearing Loss
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-md-block d-lg-none">
+              <div class="accordion accordion-flush mb-3" id="accordion-page">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#on-this-page1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <b><i class="bi bi-file-break"></i>On this Page </b>
+                    </button>
+                  </h2>
+                  <div
+                    id="on-this-page1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-page"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="scrollspy-example"
+                        data-bs-spy="scroll"
+                        data-bs-target="#on-this-page"
+                        data-bs-smooth-scroll="true"
+                        tabindex="0"
+                      >
+                        <div id="on-this-page" class="list-group">
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-1"
+                            >About Hearing Loss</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-2"
+                            >When to see your GP?</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-3"
+                            >Why it happens</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-4"
+                            >Preventing hearing loss</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-5"
+                            >Treating hearing loss</a
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-12 my-3">
-                        <h5>Rate this page</h5>
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck1"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck2"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck3"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck4"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck5"><i class="bi bi-star-fill"></i></label>
-                          </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div
+              class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#list-example"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <img
+                src="/assets/images/hearingloss.png"
+                alt="Hearing Loss image"
+                class="img-fluid mb-4"
+              />
+              <h2 id="list-item-1"><mark>About Hearing Loss</mark></h2>
+              <p>
+                Hearing loss is a common problem that often develops with age or
+                is caused by repeated exposure to loud noises.
+              </p>
+              <p>
+                Action on Hearing Loss estimates that there are more than 10
+                million (about 1 in 6) people in the UK with some degree of
+                hearing impairment or deafness.
+              </p>
+              <p>
+                Hearing loss can occur suddenly, but usually develops gradually.
+                General signs of hearing loss can include:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    difficulty hearing other people clearly and misunderstanding
+                    what they say.
+                  </p>
+                </li>
+                <li>
+                  <p>asking people to repeat themselves.</p>
+                </li>
+                <li>
+                  <p>
+                    listening to music or watching television with the volume
+                    turned up higher than other people require.
+                  </p>
+                </li>
+              </ul>
 
-        
+              <br />
+
+              <h2 id="list-item-2">
+                <mark
+                  >When to see your
+                  <abbr title="Generic Pharmacy">GP?</abbr></mark
+                >
+              </h2>
+              <p>
+                See your GP if you're having problems with your hearing, or your
+                child is showing signs of hearing difficulty. If you lose your
+                hearing suddenly, in one or both ears, you must see your GP as
+                soon as possible.
+              </p>
+              <p>
+                Your GP can check for any problems and may refer you to an
+                audiologist (hearing specialist) or an ENT surgeon for further
+                tests.
+              </p>
+              <p>
+                You can also visit the Action on Hearing Loss website for an
+                online hearing test.
+              </p>
+
+              <br />
+
+              <h3 id="list-item-3"><mark>Why it happens</mark></h3>
+              <p>
+                Hearing loss is the result of sound signals not reaching the
+                brain. There are two main types of hearing loss, depending on
+                where the problem lies:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    sensorineural hearing loss caused by damage to the sensitive
+                    hair cells inside the inner ear or damage to the auditory
+                    nerve; this occurs naturally with age or as a result of
+                    injury
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    conductive hearing loss when sounds are unable to pass from
+                    your outer ear to your inner ear, often because of a
+                    blockage such as earwax, glue ear or a build-up of fluid
+                    from an ear infection, or because of a perforated ear drum
+                    or disorder of the hearing bones
+                  </p>
+                </li>
+              </ul>
+
+              <p>
+                It's also possible to have both these types of hearing loss.
+                This is known as mixed hearing loss.
+              </p>
+              <p>
+                Some people are born with hearing loss, but most cases develop
+                as you get older.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-4"><mark>Preventing hearing loss</mark></h2>
+              <p>
+                It isn't always possible to prevent hearing loss if you have an
+                underlying condition that causes you to lose your hearing.
+              </p>
+              <p>
+                However, there are several things you can do to reduce the risk
+                of hearing loss from long-term exposure to loud noise. This
+                includes not having music or the television on at a loud volume
+                at home and using ear protection at loud music events or in
+                noisy work environments.
+              </p>
+              <p>
+                You should also see your GP if you have signs of an ear
+                infection, such as flu-like symptoms, severe earache, discharge
+                or hearing loss.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-5"><mark>Treating hearing loss</mark></h2>
+              <p>
+                The way hearing loss is treated depends on the cause and how
+                severe it is.
+              </p>
+              <p>
+                In cases of sensorineural hearing loss, there are several
+                options that may help to improve a persons ability to hear and
+                communicate. These include:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    digital hearing aids - which are available through the NHS
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    bone anchored implants - suitable for people who are unable
+                    to use hearing aids and for some levels of sensorineural
+                    hearing loss
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    middle ear implants - suitable for some people who are
+                    unable to use hearing aids
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    cochlear implants - for people who find hearing aids aren't
+                    powerful enough
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    lip reading and/or sign language - such as British Sign
+                    Language (BSL)
+                  </p>
+                </li>
+              </ul>
+
+              <p>
+                Conductive hearing loss is sometimes temporary and can be
+                treated with medication or minor surgery, if necessary. However,
+                more major surgery may be required to fix the ear drum or
+                hearing bones. If conventional hearing aids don't work, there
+                are also some implantable devices for this type of hearing loss,
+                such as a Bone Anchored Hearing Aids (BAHAs).
+              </p>
+
+              <br />
+            </div>
+            <div
+              class="col-lg-3 d-none d-lg-block scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#on-this-page2"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <div id="on-this-page2" class="list-group">
+                <h5>
+                  <i class="bi bi-file-break"></i>
+                  On this page
+                </h5>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-1"
+                  >About Hearing Loss</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-2"
+                  >When to see your GP?</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-3"
+                  >Why it happens</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-4"
+                  >Preventing hearing loss</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-5"
+                  >Treating hearing loss</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-7 my-3 col-md-8 col-lg-7">
+              <h5>Was this page helpful?</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio1"
+                  ><i class="bi bi-hand-thumbs-up"></i
+                ></label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio2"
+                  ><i class="bi bi-hand-thumbs-down"></i
+                ></label>
+              </div>
+            </div>
+            <div class="col-5 mt-3 col-md-4 col-lg-5">
+              <a class="btn btn-primary" href="#" role="button">
+                <i class="bi bi-arrow-up-square"></i>
+                Back to top
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 my-3">
+              <h5>Rate this page</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck1"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck2"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck3"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck4"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck5"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck5"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <!-- Footer Section -->
-          <section id="contact" class="py-5">
-              <div class="container">
-                <!-- Contact and Form Label -->
-                  <a href="/#" class="text-decoration-none"><h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4></a>
-                  <h6>Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
-                  <p>Fill out the form below.</p>
-                  <div class="row g-5">
-                      <div class="col-md-12 col-lg-6 ">
-                        <!-- Forms -->
-                        <form>
-                          <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="email@email.com">
-                            <label for="floatingInput">Email address</label>
-                          </div>
-                          <div class="row">
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                                <label for="floatingInput">First Name</label>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                                <label for="floatingInput">Last Name</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box"></textarea>
-                            <label for="floatingTextarea">Comments or Suggestions</label>
-                          </div>
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-info" type="button">
-                                  <i class="bi bi-send"></i>
-                                  Send
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-danger text-black" type="button">
-                                  <i class="bi bi-x-circle"></i>
-                                  Cancel 
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      
-                      <!-- Contacts -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Contacts</h6>
-                        <a href="https://gmail.com"><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://whatsapp.com"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
-                      </div>
-  
-                      <!-- Legals -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Legals</h6>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
-                      </div>
-  
-                      <!-- References -->
-                      <div class="col-4 col-lg-2">
-                        <h6>References</h6>
-                        <p><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">NHS inform</a></p>
-                        <p><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Bootstrap</a></p>
-                        <p><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Google</a></p>
-                        <p><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Youtube</a></p>
-                        <p><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Gradient Generator</a></p>
-                      </div>
+      <!-- Footer Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <!-- Contact and Form Label -->
+          <a class="navbar-brand fw-bold fs-5" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+          <h6 class="mt-3">
+            Help me improve this <span class="text-danger">website</span> by
+            sending a suggestion
+          </h6>
+          <p>Fill out the form below.</p>
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-6">
+              <!-- Forms -->
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email@email.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="first-name"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInput">First Name</label>
+                    </div>
                   </div>
-  
-              </div>
-  
-              <!-- Horizontal Line -->
-              <hr>
-              <!-- Alrights Reserved Text -->
-              <p class="text-center">Allrights reserved &copy; <span class="badge rounded-circle bg-info">E</span> - Konsulta <span class="text-primary">Medical</span> 2023</p>
-              
-          </section>
-          <!-- End of Footer Section -->
-      </footer>
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="last-name"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInput">Last Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="suggestion-box"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments or Suggestions</label>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-info" type="button">Send</button>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-danger text-black" type="button">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
 
+            <!-- Contacts -->
+            <div class="col-4 col-lg-2">
+              <h6>Contacts</h6>
+              <a href="https://gmail.com"
+                ><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://whatsapp.com"
+                ><i class="bi bi-whatsapp" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-</body>
+            <!-- Legals -->
+            <div class="col-4 col-lg-2">
+              <h6>Legals</h6>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Terms and Condition</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Privacy Policy</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Accessibility Policy</a
+                >
+              </p>
+            </div>
+
+            <!-- References -->
+            <div class="col-4 col-lg-2">
+              <h6>References</h6>
+              <p>
+                <a
+                  href="https://nhsinform.scot"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >NHS inform</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://getbootstrap.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Bootstrap</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://google.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Google</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://youtube.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://cssgradient.io"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Gradient Generator</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr />
+        <!-- Alrights Reserved Text -->
+        <p class="text-center">
+          Allrights reserved &copy;
+          <span class="badge rounded-circle bg-info">E</span> - Konsulta
+          <span class="text-primary">Medical</span> 2023
+        </p>
+      </section>
+      <!-- End of Footer Section -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

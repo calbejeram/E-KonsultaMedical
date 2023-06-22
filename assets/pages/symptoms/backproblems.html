@@ -1,483 +1,926 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="icon"
+      href="/assets/images/logobrand.png"
+      type="image/icon type"
+    />
     <title>Back Problems | B</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Navbar -->
-        <section id="header">
-            <nav class="navbar navbar-expand-lg bg-info">
-              <div class="container">
-                  <a class="navbar-brand" href="/#">E-Konsulta</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-                          <li class="nav-item" role="presentation">
-                          <a href="/index.html" class="nav-link">
-                              <button class="nav-link" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#blogs" class="nav-link">
-                              <button class="nav-link" id="blogs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Blogs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#faqs" class="nav-link">
-                              <button class="nav-link" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">FAQs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#about" class="nav-link">
-                              <button class="nav-link" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="#contact" class="nav-link">
-                              <button class="nav-link" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contacts</button>
-                          </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-            </nav>
-          </section>
+      <!-- Navbar -->
+      <section id="header">
+        <nav class="navbar navbar-expand-lg bg-info">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-5" href="/#"
+              ><img
+                src="/assets/images/logobrand.png"
+                alt=""
+                style="width: 50px"
+              />E-Konsulta</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row"
+                id="pillNav2"
+                role="tablist"
+                style="
+                  --bs-nav-link-color: var(--bs-white);
+                  --bs-nav-pills-link-active-color: var(--bs-primary);
+                  --bs-nav-pills-link-active-bg: var(--bs-white);
+                "
+              >
+                <li class="nav-item" role="presentation">
+                  <a href="/index.html" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="home-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      <i class="bi bi-house"></i>
+                      Home
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#faqs" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="faqs-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-patch-question"></i>
+                      FAQs
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#about" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="about-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-file-person"></i>
+                      About
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="#contact" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="contacts-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-person-rolodex"></i>
+                      Contacts
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <main>
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/#main-content">
-                                <i class="bi bi-clipboard-check"></i>
-                                Get Started
-                              </a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/symptoms/symptoms.html">Symptoms and Self-help</a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/symptoms/symptomsatoz.html">B</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Back Problems</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/#main-content">
+                      <i class="bi bi-clipboard-check"></i>
+                      Get Started
+                    </a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/symptoms/symptoms.html"
+                      >Symptoms and Self-help</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/symptoms/symptomsatoz.html">B</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Back Problems
+                  </li>
+                </ol>
+              </nav>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-md-block d-lg-none">
-                        <div class="accordion accordion-flush mb-3" id="accordion-page">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#on-this-page1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <b><i class="bi bi-file-break"></i>On this Page </b>
-                                </button>
-                              </h2>
-                              <div id="on-this-page1" class="accordion-collapse collapse" data-bs-parent="#accordion-page">
-                                <div class="accordion-body">
-                                    <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page" data-bs-smooth-scroll="true" tabindex="0">
-                                        <div id="on-this-page" class="list-group">
-                                            <a class="list-group-item list-group-item-action" href="#list-item-1">Back problems</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-2">Sudden or worsening back pain</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-3">Can back pain cause problems anywhere else?</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-4">What causes back problems?</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-5">Self-help</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-6">Stay positive</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-md-block d-lg-none">
+              <div class="accordion accordion-flush mb-3" id="accordion-page">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#on-this-page1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <b><i class="bi bi-file-break"></i>On this Page </b>
+                    </button>
+                  </h2>
+                  <div
+                    id="on-this-page1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-page"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="scrollspy-example"
+                        data-bs-spy="scroll"
+                        data-bs-target="#on-this-page"
+                        data-bs-smooth-scroll="true"
+                        tabindex="0"
+                      >
+                        <div id="on-this-page" class="list-group">
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-1"
+                            >Back problems</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-2"
+                            >Sudden or worsening back pain</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-3"
+                            >Can back pain cause problems anywhere else?</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-4"
+                            >What causes back problems?</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-5"
+                            >Self-help</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-6"
+                            >Stay positive</a
+                          >
                         </div>
+                      </div>
                     </div>
-                    <div class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
-                        <img src="/assets/images/backproblems.png" alt="earache image" class="img-fluid mb-4">
-                        <h2 id="list-item-1"><mark>Back problems</mark></h2>
-                        <p>Back pain is common and often starts for no obvious reason. The spine is strong and back problems are rarely due to any serious disease or damage.</p>
-                        <p>Back problems can cause a range of symptoms, including:</p>
-                        <ul>
-                          <li>
-                            <p>stiffness</p>
-                          </li>
-                          <li>
-                            <p>muscle spasms</p>
-                          </li>
-                          <li>
-                            <p>hot, burning, shooting or stabbing pains in your back and sometimes into one or both of your legs or feet</p>
-                          </li>
-                          <li>
-                            <p>pins and needles, numbness or, weakness likely due to nerve irritation</p>
-                          </li>
-                        </ul>
-                        <p>In many cases, new or flare-up of long-standing back problems should begin to settle within 6 weeks without the need to see a healthcare professional.</p>
-                        <p>For most back pain problems, you'll not normally need an X-ray or MRI scan.</p>
-
-                        <br>
-
-                        <h2 id="list-item-2"><mark>Sudden or worsening back pain</mark></h2>
-                        <p>Back pain can sometimes be so sudden and severe that you end up on the floor and in too much pain to move. If this happens, there are techniques you can use to get back on your feet safely and in relative comfort</p>
-                        <p>Only attempt this if you feel well, additional symptoms like stomach or abdominal pain can indicate other conditions which should be discussed with a Healthcare Professional.</p>
-
-                        <div class="accordion accordion-flush mb-3 mb-lg-0" id="accordion-parent">
-                          <!-- Causes Accordion item -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cause-1">
-                                <b>How to get up from the floor</b>
-                              </button>
-                            </h2>
-                            <div id="cause-1" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
-                              <div class="accordion-body">
-                                  <p>To get up safely from lying face down:</p>
-                                  
-                                  <ol type="1">
-                                    <li>
-                                      <p>Bend your stronger knee and slowly raise it and your upper body to a crawling position</p>
-                                    </li>
-                                    <li>
-                                      <p>Move towards a chair that can be used for support</p>
-                                    </li>
-                                    <li>
-                                      <p>Pause for breath</p>
-                                    </li>
-                                    <li>
-                                      <p>Support yourself on the chair with your arms</p>
-                                    </li>
-                                    <li>
-                                      <p>Move your stronger leg forward from a kneeling position</p>
-                                    </li>
-                                    <li>
-                                      <p>Lean forward and use the chair to support you as you straighten both legs, starting with the strongest</p>
-                                    </li>
-                                  </ol>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cause-2">
-                                <b>How to get out of a chair</b>
-                              </button>
-                            </h2>
-                            <div id="cause-2" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
-                              <div class="accordion-body">
-                                <p>To get out of a chair safely:</p>
-                                <ol type="1">
-                                  <li>
-                                    <p>Ease yourself forward to the edge of the chair</p>
-                                  </li>
-                                  <li>
-                                    <p>Brace your tummy muscles</p>
-                                  </li>
-                                  <li>
-                                    <p>Pause for breath</p>
-                                  </li>
-                                  <li>
-                                    <p>Use the arms of the chair to help you stand up</p>
-                                  </li>
-                                  <li>
-                                    <p>If the chair has no arms, push on your thighs for a bit of extra support</p>
-                                  </li>
-                                </ol>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cause-3">
-                                <b>How to get in and out of bed</b>
-                              </button>
-                            </h2>
-                            <div id="cause-3" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
-                              <div class="accordion-body">
-                                <p>To get into bed safely:</p>
-                                <ol type="1">
-                                  <li>
-                                    <p>Feel the bed at the back of your legs</p>
-                                  </li>
-                                  <li>
-                                    <p>Brace your tummy muscles</p>
-                                  </li>
-                                  <li>
-                                    <p>Sit down slowly pushing your thighs for a bit of extra support</p>
-                                  </li>
-                                  <li>
-                                    <p>Support your body with the arm closest to the top of the bed and use your other arm to slowly lower yourself down</p>
-                                  </li>
-                                  <li>
-                                    <p>Roll onto the side you feel most comfortable</p>
-                                  </li>
-                                </ol>
-                                <p>To get out of bed safely:</p>
-                                <ol type="1">
-                                  <li>
-                                    <p>Roll onto your tummy and edge yourself towards the edge of the bed</p>
-                                  </li>
-                                  <li>
-                                    <p>Let the leg nearest the edge drop towards the floor and start to push up with your hands</p>
-                                  </li>
-                                  <li>
-                                    <p>Walk your hands down the bed towards your hips and raise yourself up</p>
-                                  </li>
-                                  <li>
-                                    <p>Carefully bring your other leg towards the floor and stand up</p>
-                                  </li>
-                                  </li>
-                                </ol>
-
-                                <p>Alternatively:</p>
-                                <ol type="1">
-                                  <li>
-                                    <p>Roll onto the side you feel most comfortable</p>
-                                  </li>
-                                  <li>
-                                    <p>Support your body with the arm closest to the bed and  use your other arm to slowly start to raise yourself up</p>
-                                  </li>
-                                  <li>
-                                    <p>Carefully bring your other leg towards the floor and stand up</p>
-                                  </li>
-                                </ol>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <br>
-
-                        <h2 id="list-item-3"><mark>Can back pain cause problems anywhere else?</mark></h2>
-                        <p>Your back problem may cause hot, burning, shooting, or stabbing pains into one or both of your legs. You may also get pins and needles. This can be due to nerve irritation.</p>
-
-                        <br>
-
-                        <h2 id="list-item-4"><mark>What causes back problems?</mark></h2>
-                        <ul>
-                          <li>
-                            <p>staying in one position too long</p>
-                          </li>
-                          <li>
-                            <p>lifting something awkwardly</p>
-                          </li>
-                          <li>
-                            <p>a flare-up of an existing problem</p>
-                          </li>
-                          <li>
-                            <p>doing more activity than you normally would</p>
-                          </li>
-                        </ul>
-
-                        <br>
-
-                        <h2 id="list-item-5"><mark>Self-help</mark></h2>
-                        <p>Keeping active is an essential part of your treatment and recovery and is the single best thing you can do for your health. Exercising can really help your back and reduce the pain you feel.</p>
-                        
-                        <h3>Do:</h3>
-                        <ul>
-                            <li>
-                                <p>try to maintain your current levels of fitness - even if you have to modify what you normally do, any activity is better than none</p>
-                            </li>
-                            <li>
-                                <p>try and keep your other muscles and joints strong and flexible</p>
-                            </li>
-                            <li>
-                                <p>try to prevent a recurrence of the problem</p>
-                            </li>
-                            <li>
-                                <p>try to aim for a healthy body weight</p>
-                            </li>
-                        </ul>
-
-                        <h3>Dont:</h3>
-                        
-                        <ul>
-                          <li>
-                            <p>brace or hold yourself still - your back is designed to be mobile</p>
-                          </li>
-                          <li>
-                            <p>sit down or rest for too long - resting in bed doesn't help back pain, and often makes it harder to get going again</p>
-                          </li>
-                        </ul>
-
-                        <p>For some people with very severe allergies, a treatment called immunotherapy may be recommended.</p>
-                        <p>This involves being exposed to the allergen in a controlled way over a number of years, so your body gets used to it and doesn't react to it so severely.</p>
-
-
-                        <br>
-
-                        <h2 id="list-item-6"><mark>Stay positive</mark></h2>
-                        <p>It's easy to start worrying about all the possible things that could be wrong, but research has shown that most back pain settles with time.</p>
-                        <p>Keeping as active as possible helps you to cope better and get back to your usual activities more quickly.</p>
-                    </div>
-                    <div class="col-lg-3 d-none d-lg-block scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page2" data-bs-smooth-scroll="true" tabindex="0">
-                        <div id="on-this-page2" class="list-group">
-                            <h5>
-                                <i class="bi bi-file-break"></i>
-                                On this page
-                            </h5>
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">Back problems</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">Sudden or worsening back pain</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">Can back pain cause problems anywhere else?</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">What causes back problems?</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-5">Self-help</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-6">Stay positive</a>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-7 my-3 col-md-8 col-lg-7">
-                        <h5>Was this page helpful?</h5>
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-hand-thumbs-up"></i></label>
-                          
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-hand-thumbs-down"></i></label>
-                        </div>
-                    </div>
-                    <div class="col-5 mt-3 col-md-4 col-lg-5">
-                      <a class="btn btn-primary" href="#" role="button">
-                        <i class="bi bi-arrow-up-square"></i>
-                        Back to top
-                      </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 my-3">
-                        <h5>Rate this page</h5>
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck1"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck2"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck3"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck4"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck5"><i class="bi bi-star-fill"></i></label>
-                          </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div
+              class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#list-example"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <img
+                src="/assets/images/backproblems.png"
+                alt="Back Problem image"
+                class="img-fluid mb-4"
+              />
+              <h2 id="list-item-1"><mark>Back problems</mark></h2>
+              <p>
+                Back pain is common and often starts for no obvious reason. The
+                spine is strong and back problems are rarely due to any serious
+                disease or damage.
+              </p>
+              <p>Back problems can cause a range of symptoms, including:</p>
+              <ul>
+                <li>
+                  <p>stiffness</p>
+                </li>
+                <li>
+                  <p>muscle spasms</p>
+                </li>
+                <li>
+                  <p>
+                    hot, burning, shooting or stabbing pains in your back and
+                    sometimes into one or both of your legs or feet
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    pins and needles, numbness or, weakness likely due to nerve
+                    irritation
+                  </p>
+                </li>
+              </ul>
+              <p>
+                In many cases, new or flare-up of long-standing back problems
+                should begin to settle within 6 weeks without the need to see a
+                healthcare professional.
+              </p>
+              <p>
+                For most back pain problems, you'll not normally need an X-ray
+                or MRI scan.
+              </p>
 
-        
+              <br />
+
+              <h2 id="list-item-2">
+                <mark>Sudden or worsening back pain</mark>
+              </h2>
+              <p>
+                Back pain can sometimes be so sudden and severe that you end up
+                on the floor and in too much pain to move. If this happens,
+                there are techniques you can use to get back on your feet safely
+                and in relative comfort
+              </p>
+              <p>
+                Only attempt this if you feel well, additional symptoms like
+                stomach or abdominal pain can indicate other conditions which
+                should be discussed with a Healthcare Professional.
+              </p>
+
+              <div
+                class="accordion accordion-flush mb-3 mb-lg-0"
+                id="accordion-parent"
+              >
+                <!-- Causes Accordion item -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#cause-1"
+                    >
+                      <b>How to get up from the floor</b>
+                    </button>
+                  </h2>
+                  <div
+                    id="cause-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-parent"
+                  >
+                    <div class="accordion-body">
+                      <p>To get up safely from lying face down:</p>
+
+                      <ol type="1">
+                        <li>
+                          <p>
+                            Bend your stronger knee and slowly raise it and your
+                            upper body to a crawling position
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Move towards a chair that can be used for support
+                          </p>
+                        </li>
+                        <li>
+                          <p>Pause for breath</p>
+                        </li>
+                        <li>
+                          <p>Support yourself on the chair with your arms</p>
+                        </li>
+                        <li>
+                          <p>
+                            Move your stronger leg forward from a kneeling
+                            position
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Lean forward and use the chair to support you as you
+                            straighten both legs, starting with the strongest
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#cause-2"
+                    >
+                      <b>How to get out of a chair</b>
+                    </button>
+                  </h2>
+                  <div
+                    id="cause-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-parent"
+                  >
+                    <div class="accordion-body">
+                      <p>To get out of a chair safely:</p>
+                      <ol type="1">
+                        <li>
+                          <p>Ease yourself forward to the edge of the chair</p>
+                        </li>
+                        <li>
+                          <p>Brace your tummy muscles</p>
+                        </li>
+                        <li>
+                          <p>Pause for breath</p>
+                        </li>
+                        <li>
+                          <p>Use the arms of the chair to help you stand up</p>
+                        </li>
+                        <li>
+                          <p>
+                            If the chair has no arms, push on your thighs for a
+                            bit of extra support
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#cause-3"
+                    >
+                      <b>How to get in and out of bed</b>
+                    </button>
+                  </h2>
+                  <div
+                    id="cause-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-parent"
+                  >
+                    <div class="accordion-body">
+                      <p>To get into bed safely:</p>
+                      <ol type="1">
+                        <li>
+                          <p>Feel the bed at the back of your legs</p>
+                        </li>
+                        <li>
+                          <p>Brace your tummy muscles</p>
+                        </li>
+                        <li>
+                          <p>
+                            Sit down slowly pushing your thighs for a bit of
+                            extra support
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Support your body with the arm closest to the top of
+                            the bed and use your other arm to slowly lower
+                            yourself down
+                          </p>
+                        </li>
+                        <li>
+                          <p>Roll onto the side you feel most comfortable</p>
+                        </li>
+                      </ol>
+                      <p>To get out of bed safely:</p>
+                      <ol type="1">
+                        <li>
+                          <p>
+                            Roll onto your tummy and edge yourself towards the
+                            edge of the bed
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Let the leg nearest the edge drop towards the floor
+                            and start to push up with your hands
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Walk your hands down the bed towards your hips and
+                            raise yourself up
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Carefully bring your other leg towards the floor and
+                            stand up
+                          </p>
+                        </li>
+                      </ol>
+
+                      <p>Alternatively:</p>
+                      <ol type="1">
+                        <li>
+                          <p>Roll onto the side you feel most comfortable</p>
+                        </li>
+                        <li>
+                          <p>
+                            Support your body with the arm closest to the bed
+                            and use your other arm to slowly start to raise
+                            yourself up
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Carefully bring your other leg towards the floor and
+                            stand up
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <h2 id="list-item-3">
+                <mark>Can back pain cause problems anywhere else?</mark>
+              </h2>
+              <p>
+                Your back problem may cause hot, burning, shooting, or stabbing
+                pains into one or both of your legs. You may also get pins and
+                needles. This can be due to nerve irritation.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-4"><mark>What causes back problems?</mark></h2>
+              <ul>
+                <li>
+                  <p>staying in one position too long</p>
+                </li>
+                <li>
+                  <p>lifting something awkwardly</p>
+                </li>
+                <li>
+                  <p>a flare-up of an existing problem</p>
+                </li>
+                <li>
+                  <p>doing more activity than you normally would</p>
+                </li>
+              </ul>
+
+              <br />
+
+              <h2 id="list-item-5"><mark>Self-help</mark></h2>
+              <p>
+                Keeping active is an essential part of your treatment and
+                recovery and is the single best thing you can do for your
+                health. Exercising can really help your back and reduce the pain
+                you feel.
+              </p>
+
+              <h3>Do:</h3>
+              <ul>
+                <li>
+                  <p>
+                    try to maintain your current levels of fitness - even if you
+                    have to modify what you normally do, any activity is better
+                    than none
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    try and keep your other muscles and joints strong and
+                    flexible
+                  </p>
+                </li>
+                <li>
+                  <p>try to prevent a recurrence of the problem</p>
+                </li>
+                <li>
+                  <p>try to aim for a healthy body weight</p>
+                </li>
+              </ul>
+
+              <h3>Dont:</h3>
+
+              <ul>
+                <li>
+                  <p>
+                    brace or hold yourself still - your back is designed to be
+                    mobile
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    sit down or rest for too long - resting in bed doesn't help
+                    back pain, and often makes it harder to get going again
+                  </p>
+                </li>
+              </ul>
+
+              <p>
+                For some people with very severe allergies, a treatment called
+                immunotherapy may be recommended.
+              </p>
+              <p>
+                This involves being exposed to the allergen in a controlled way
+                over a number of years, so your body gets used to it and doesn't
+                react to it so severely.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-6"><mark>Stay positive</mark></h2>
+              <p>
+                It's easy to start worrying about all the possible things that
+                could be wrong, but research has shown that most back pain
+                settles with time.
+              </p>
+              <p>
+                Keeping as active as possible helps you to cope better and get
+                back to your usual activities more quickly.
+              </p>
+            </div>
+            <div
+              class="col-lg-3 d-none d-lg-block scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#on-this-page2"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <div id="on-this-page2" class="list-group">
+                <h5>
+                  <i class="bi bi-file-break"></i>
+                  On this page
+                </h5>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-1"
+                  >Back problems</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-2"
+                  >Sudden or worsening back pain</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-3"
+                  >Can back pain cause problems anywhere else?</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-4"
+                  >What causes back problems?</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-5"
+                  >Self-help</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-6"
+                  >Stay positive</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-7 my-3 col-md-8 col-lg-7">
+              <h5>Was this page helpful?</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio1"
+                  ><i class="bi bi-hand-thumbs-up"></i
+                ></label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio2"
+                  ><i class="bi bi-hand-thumbs-down"></i
+                ></label>
+              </div>
+            </div>
+            <div class="col-5 mt-3 col-md-4 col-lg-5">
+              <a class="btn btn-primary" href="#" role="button">
+                <i class="bi bi-arrow-up-square"></i>
+                Back to top
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 my-3">
+              <h5>Rate this page</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck1"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck2"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck3"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck4"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck5"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck5"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <!-- Footer Section -->
-          <section id="contact" class="py-5">
-              <div class="container">
-                <!-- Contact and Form Label -->
-                  <a href="/#" class="text-decoration-none"><h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4></a>
-                  <h6>Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
-                  <p>Fill out the form below.</p>
-                  <div class="row g-5">
-                      <div class="col-md-12 col-lg-6 ">
-                        <!-- Forms -->
-                        <form>
-                          <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="email@email.com">
-                            <label for="floatingInput">Email address</label>
-                          </div>
-                          <div class="row">
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                                <label for="floatingInput">First Name</label>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                                <label for="floatingInput">Last Name</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box"></textarea>
-                            <label for="floatingTextarea">Comments or Suggestions</label>
-                          </div>
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-info" type="button">
-                                  <i class="bi bi-send"></i>
-                                  Send
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-danger text-black" type="button">
-                                  <i class="bi bi-x-circle"></i>
-                                  Cancel 
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      
-                      <!-- Contacts -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Contacts</h6>
-                        <a href="https://gmail.com"><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://whatsapp.com"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
-                      </div>
-  
-                      <!-- Legals -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Legals</h6>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
-                      </div>
-  
-                      <!-- References -->
-                      <div class="col-4 col-lg-2">
-                        <h6>References</h6>
-                        <p><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">NHS inform</a></p>
-                        <p><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Bootstrap</a></p>
-                        <p><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Google</a></p>
-                        <p><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Youtube</a></p>
-                        <p><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Gradient Generator</a></p>
-                      </div>
+      <!-- Footer Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <!-- Contact and Form Label -->
+          <a class="navbar-brand fw-bold fs-5" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+          <h6 class="mt-3">
+            Help me improve this <span class="text-danger">website</span> by
+            sending a suggestion
+          </h6>
+          <p>Fill out the form below.</p>
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-6">
+              <!-- Forms -->
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email@email.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="first-name"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInput">First Name</label>
+                    </div>
                   </div>
-  
-              </div>
-  
-              <!-- Horizontal Line -->
-              <hr>
-              <!-- Alrights Reserved Text -->
-              <p class="text-center">Allrights reserved &copy; <span class="badge rounded-circle bg-info">E</span> - Konsulta <span class="text-primary">Medical</span> 2023</p>
-              
-          </section>
-          <!-- End of Footer Section -->
-      </footer>
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="last-name"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInput">Last Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="suggestion-box"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments or Suggestions</label>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-info" type="button">Send</button>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-danger text-black" type="button">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
 
+            <!-- Contacts -->
+            <div class="col-4 col-lg-2">
+              <h6>Contacts</h6>
+              <a href="https://gmail.com"
+                ><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://whatsapp.com"
+                ><i class="bi bi-whatsapp" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-</body>
+            <!-- Legals -->
+            <div class="col-4 col-lg-2">
+              <h6>Legals</h6>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Terms and Condition</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Privacy Policy</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Accessibility Policy</a
+                >
+              </p>
+            </div>
+
+            <!-- References -->
+            <div class="col-4 col-lg-2">
+              <h6>References</h6>
+              <p>
+                <a
+                  href="https://nhsinform.scot"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >NHS inform</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://getbootstrap.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Bootstrap</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://google.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Google</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://youtube.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://cssgradient.io"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Gradient Generator</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr />
+        <!-- Alrights Reserved Text -->
+        <p class="text-center">
+          Allrights reserved &copy;
+          <span class="badge rounded-circle bg-info">E</span> - Konsulta
+          <span class="text-primary">Medical</span> 2023
+        </p>
+      </section>
+      <!-- End of Footer Section -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -3,10 +3,17 @@ body {
 }
 
 /* Header */
+/* #header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+} */
 
 #hero {
     background: url(/assets/images/heroimage.jpg) center center/ cover;
-    height: 100vh;
 }
 
 .hero-message {
@@ -55,4 +62,3 @@ body {
 .disabled-letter a {
     color: red;
 }
-

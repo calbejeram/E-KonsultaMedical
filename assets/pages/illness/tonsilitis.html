@@ -1,483 +1,979 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="icon"
+      href="/assets/images/logobrand.png"
+      type="image/icon type"
+    />
     <title>Tonsilitis | Ears, Nose, and Throat</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Navbar -->
-        <section id="header">
-            <nav class="navbar navbar-expand-lg bg-info">
-              <div class="container">
-                  <a class="navbar-brand" href="/#">E-Konsulta</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-                          <li class="nav-item" role="presentation">
-                          <a href="/index.html" class="nav-link">
-                              <button class="nav-link" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#blogs" class="nav-link">
-                              <button class="nav-link" id="blogs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Blogs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#faqs" class="nav-link">
-                              <button class="nav-link" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">FAQs</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="/#about" class="nav-link">
-                              <button class="nav-link" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</button>
-                          </a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                          <a href="#contact" class="nav-link">
-                              <button class="nav-link" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contacts</button>
-                          </a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-            </nav>
-          </section>
+      <!-- Navbar -->
+      <section id="header">
+        <nav class="navbar navbar-expand-lg bg-info">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-5" href="/#"
+              ><img
+                src="/assets/images/logobrand.png"
+                alt=""
+                style="width: 50px"
+              />E-Konsulta</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row"
+                id="pillNav2"
+                role="tablist"
+                style="
+                  --bs-nav-link-color: var(--bs-white);
+                  --bs-nav-pills-link-active-color: var(--bs-primary);
+                  --bs-nav-pills-link-active-bg: var(--bs-white);
+                "
+              >
+                <li class="nav-item" role="presentation">
+                  <a href="/index.html" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="home-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="true"
+                    >
+                      <i class="bi bi-house"></i>
+                      Home
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#faqs" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="faqs-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-patch-question"></i>
+                      FAQs
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="/#about" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="about-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-file-person"></i>
+                      About
+                    </button>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="#contact" class="nav-link">
+                    <button
+                      class="nav-link d-flex flex-column align-items-center justify-content-center"
+                      id="contacts-tab2"
+                      data-bs-toggle="tab"
+                      type="button"
+                      role="tab"
+                      aria-selected="false"
+                    >
+                      <i class="bi bi-person-rolodex"></i>
+                      Contacts
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
     </header>
 
     <main>
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/#main-content">
-                                <i class="bi bi-clipboard-check"></i>
-                                Get Started
-                              </a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/illness/illness.html">Illness and Conditions</a></li>
-                              <li class="breadcrumb-item"><a href="/assets/pages/illness/earsnosethroat.html">Ears, Nose, and Throat</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Tonsilitis</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/#main-content">
+                      <i class="bi bi-clipboard-check"></i>
+                      Get Started
+                    </a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/illness/illness.html"
+                      >Illness and Conditions</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/illness/earsnosethroat.html"
+                      >Ears, Nose, and Throat</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Tonsilitis
+                  </li>
+                </ol>
+              </nav>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="p-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-md-block d-lg-none">
-                        <div class="accordion accordion-flush mb-3" id="accordion-page">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#on-this-page1" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  <b><i class="bi bi-file-break"></i>On this Page </b>
-                                </button>
-                              </h2>
-                              <div id="on-this-page1" class="accordion-collapse collapse" data-bs-parent="#accordion-page">
-                                <div class="accordion-body">
-                                    <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page" data-bs-smooth-scroll="true" tabindex="0">
-                                        <div id="on-this-page" class="list-group">
-                                            <a class="list-group-item list-group-item-action" href="#list-item-1">About tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-2">The tonsils</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-3">What causes tonsillitis?</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-4">Treating tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-5">Chronic tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-6">Complications of tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-7">Symptoms of tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-8">Causes of tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-9">Treating tonsillitis</a>
-                                            <a class="list-group-item list-group-item-action" href="#list-item-10">Self-help</a>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-md-block d-lg-none">
+              <div class="accordion accordion-flush mb-3" id="accordion-page">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#on-this-page1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <b><i class="bi bi-file-break"></i>On this Page </b>
+                    </button>
+                  </h2>
+                  <div
+                    id="on-this-page1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-page"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="scrollspy-example"
+                        data-bs-spy="scroll"
+                        data-bs-target="#on-this-page"
+                        data-bs-smooth-scroll="true"
+                        tabindex="0"
+                      >
+                        <div id="on-this-page" class="list-group">
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-1"
+                            >About tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-2"
+                            >The tonsils</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-3"
+                            >What causes tonsillitis?</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-4"
+                            >Treating tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-5"
+                            >Chronic tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-6"
+                            >Complications of tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-7"
+                            >Symptoms of tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-8"
+                            >Causes of tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-9"
+                            >Treating tonsillitis</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-10"
+                            >Self-help</a
+                          >
                         </div>
+                      </div>
                     </div>
-                    <div class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0">
-                        <img src="/assets/images/tonsilitis.png" alt="Tonsilitis image" class="img-fluid mb-4">
-                        <h2 id="list-item-1"><mark>About tonsillitis</mark></h2>
-                        <p>Tonsillitis is inflammation of the tonsils. It's usually caused by a viral infection or, less commonly, a bacterial infection.</p>
-                        <p>Tonsillitis is a common condition in children, teenagers and young adults.</p>
-                        <p>The symptoms of tonsillitis include:</p>
-
-                        <ul>
-                            <li>
-                                <p>a sore throat and pain when swallowing</p>
-                            </li>
-                            <li>
-                                <p>earache</p>
-                            </li>
-                            <li>
-                                <p>high temperature (fever) over 38C (100.4F)</p>
-                            </li>
-                            <li>
-                                <p>coughing</p>
-                            </li>
-                            <li>
-                                <p>headache</p>
-                            </li>
-                        </ul>
-
-                        <p>Symptoms usually pass within three to four days.</p>
-
-                        <br>
-
-                        <h2 id="list-item-2"><mark>The tonsils</mark></h2>
-                        <p>The tonsils are two small glands that sit on either side of the throat. In young children, they help to fight germs and act as a barrier against infection.</p>
-                        <p>When the tonsils become infected, they isolate the infection and stop it spreading further into the body.</p>
-                        <p>As a child's immune system develops and gets stronger, the tonsils become less important and usually shrink. In most people, the body is able to fight infection without the tonsils.</p>
-                        <p>Removal of the tonsils is usually only recommended if they're causing problems, such as severe or repeated episodes of tonsillitis (see below).</p>
-                        
-                        <br>
-
-                        <h3 id="list-item-3"><mark>What causes tonsillitis?</mark></h3>
-                        <p>Most cases of tonsillitis are caused by a viral infection, such as the viruses that cause the common cold or flu virus (influenza).</p>
-                        <p>Some cases can also be caused by a bacterial infection, typically a strain of bacteria called group A streptococcus bacteria.</p>
-
-                        <p>These types of infections spread easily, so it's important to try to avoid passing the infection on to others by:</p>
-
-                        <ul>
-                            <li>
-                                <p>staying away from public places, such as work, school or nursery, until your GP says it's safe to return (usually after the symptoms have passed). </p>
-                            </li>
-                            <li>
-                                <p>coughing and sneezing into a tissue and disposing of the tissue.</p>
-                            </li>
-                            <li>
-                                <p>washing hands before eating, after going to the toilet and, if possible, after coughing and sneezing.</p>
-                            </li>
-                        </ul>
-
-                        <br>
-
-                        <h2 id="list-item-4"><mark>Treating tonsillitis</mark></h2>
-                        <p>There's no specific treatment for tonsillitis, but you may be able to reduce the symptoms by:</p>
-
-                        <ul>
-                            <li>
-                                <p>taking paracetamol or ibuprofen to help relieve pain</p>
-                            </li>
-                            <li>
-                                <p>drinking plenty of fluids</p>
-                            </li>
-                            <li>
-                                <p>getting plenty of rest</p>
-                            </li>
-                        </ul>
-                        <p>If test results show that your tonsillitis is caused by a bacterial infection, a short course of oral antibiotics may be prescribed.</p>
-                        <p>If oral antibiotics aren't effective at treating bacterial tonsillitis, intravenous antibiotics (given directly into a vein) may be needed in hospital.</p>
-
-                        <br>
-
-                        <h2 id="list-item-5"><mark>Chronic tonsillitis</mark></h2>
-                        <p>In most cases, tonsillitis gets better within a week. However, a small number of children and adults have tonsillitis for longer, or it keeps returning. This is known as chronic tonsillitis and surgical treatment may be needed.</p>
-                        <p>Surgery to remove the tonsils (a tonsillectomy) is usually only recommended if:</p>
-
-                        <ul>
-                            <li>
-                                <p>you've had several severe episodes of tonsillitis over a long period of time.</p>
-                            </li>
-                            <li>
-                                <p>repeated episodes are disrupting normal activities.</p>
-                            </li>
-                        </ul>
-
-                        <br>
-
-                        <h2 id="list-item-6"><mark>Chronic tonsillitis</mark></h2>
-                        <p>Complications of tonsillitis are rare and usually only occur if it's caused by a bacterial infection. They're usually the result of the infection spreading to another part of the body.</p>
-                        <p>Possible complications of tonsillitis include:</p>
-
-                        <ul>
-                            <li>
-                                <p>a middle ear infection (otitis media) - where fluid between the eardrum and inner ear becomes infected by bacteria</p>
-                            </li>
-                            <li>
-                                <p>quinsy (peritonsillar abscess) - an abscess (collection of pus) that develops between one of the tonsils and the wall of the throat</p>
-                            </li>
-                            <li>
-                                <p>obstructive sleep apnoea (OSA) - where the walls of the throat relax during sleep, which causes breathing difficulties and poor sleep</p>
-                            </li>
-                        </ul>
-
-                        <p>Other complications of tonsillitis are very rare and usually only occur if an underlying bacterial infection is left untreated. They include:</p>
-
-                        <ul>
-                            <li>
-                                <p>scarlet fever - a condition that causes a distinctive pink-red skin rash</p>
-                            </li>
-                            <li>
-                                <p>rheumatic fever - this causes widespread inflammation throughout the body, leading to symptoms such as joint pain, rashes and jerky body movements</p>
-                            </li>
-                            <li>
-                                <p>glomerulonephritis - an infection (swelling) of the filters in the kidneys that can cause vomiting and a loss of appetite</p>
-                            </li>
-                        </ul>
-
-                        <br>
-
-                        <h2 id="list-item-7"><mark>Symptoms of tonsillitis</mark></h2>
-                        <p>The main symptom of tonsillitis is a sore throat.</p>
-                        <p>Your tonsils will be red and swollen, and your throat may be very painful, making swallowing difficult.</p>
-                        <p>In some cases, the tonsils are coated or have white, pus-filled spots on them.</p>
-                        <p>Other common symptoms of tonsillitis include:</p>
-                        
-                        <ul>
-                            <li>
-                                <p>high temperature (fever) over 38C (100.4F)</p>
-                            </li>
-                            <li>
-                                <p>coughing</p>
-                            </li>
-                            <li>
-                                <p>headache</p>
-                            </li>
-                            <li>
-                                <p>earache</p>
-                            </li>
-                            <li>
-                                <p>feeling sick</p>
-                            </li>
-                            <li>
-                                <p>feeling tired</p>
-                            </li>
-                            <li>
-                                <p>swollen, painful lymph glands in your neck</p>
-                            </li>
-                            <li>
-                                <p>loss of voice or changes to your voice</p>
-                            </li>
-                        </ul>
-
-                        <p>The symptoms of tonsillitis usually get better after three to four days.</p>
-                        <p>If you have tonsillitis that's caused by a viral infection, such as the common cold or flu, your symptoms may be milder.</p>
-                        <p>If your tonsillitis is caused by a bacterial infection, such as a streptococcal infection, your symptoms will usually be more severe and you may also have bad breath.</p>
-                        <p>It's difficult to tell just by looking at a person's throat whether they have tonsillitis as a result of a virus or a bacterial infection. Tests are needed to confirm this.</p>
-                        <p>Antibiotics may be recommended if test results show that your tonsillitis is caused by a bacterial infection.</p>
-                        
-                        <br>
-
-                        <h2 id="list-item-8"><mark>Causes of tonsillitis</mark></h2>
-                        <p>Most cases of tonsillitis are caused by a viral infection.</p>
-                        <p>Viruses known to cause tonsillitis include:</p>
-
-                        <ul>
-                            <li>
-                                <p>rhinoviruses - which cause the common cold</p>
-                            </li>
-                            <li>
-                                <p>the influenza virus</p>
-                            </li>
-                            <li>
-                                <p>parainfluenza virus - which causes laryngitis and croup</p>
-                            </li>
-                            <li>
-                                <p>enteroviruses - which cause hand, foot and mouth disease</p>
-                            </li>
-                            <li>
-                                <p>adenovirus - which is a common cause of diarrhoea</p>
-                            </li>
-                            <li>
-                                <p>the rubeola virus - which causes measles</p>
-                            </li>
-                        </ul>
-
-                        <p>In rare cases, tonsillitis can also be caused by the Epstein-Barr virus, which causes glandular fever.</p>
-                        <p>If this is the case, you'll probably feel very ill. You'll have a sore throat and the lymph glands in your throat may be swollen. You may also have a fever and feel very tired.</p>
-
-                        <br>
-
-                        <h2 id="list-item-9"><mark>Treating tonsillitis</mark></h2>
-                        <p>There's no specific treatment for tonsillitis and most cases get better within a week without treatment.</p>
-                        <p>While waiting for the infection to clear up, there are a number of things you can do to help relieve your symptoms (see below).</p>
-                        <p>If your child has tonsillitis, make sure they have plenty to eat and drink, even if they find it painful to swallow. Being hungry and dehydrated can make other symptoms, such as headaches and tiredness, worse.</p>
-
-                        <br>
-
-                        <h2 id="list-item-10"><mark>Self-help</mark></h2>
-                        <p>Over-the-counter painkillers, such as paracetamol and ibuprofen, can help relieve painful symptoms such as a sore throat.</p>
-                        <p>If treating your children with painkillers, it's important to use the correct type and dosage. Younger children only need small dosages. Your pharmacist can advise you about this.</p>
-                        <p>Children under 16 years of age shouldn't be given aspirin.</p>
-                        <p>Over-the-counter treatments that can soothe a sore throat, such as lozenges and oral sprays, are also available. Some people find that gargling with a mild antiseptic solution can also relieve a sore throat.</p>
-                        <p>Alternatively, you could try gargling with warm, salty water. Mix half a teaspoon of salt (2.5g) with a quarter of a litre (eight ounces) of water. It's important not to swallow the water, so this method may not be suitable for younger children.</p>
-
-                    </div>
-                    <div class="col-lg-3 d-none d-lg-block scrollspy-example" data-bs-spy="scroll" data-bs-target="#on-this-page2" data-bs-smooth-scroll="true" tabindex="0">
-                        <div id="on-this-page2" class="list-group">
-                            <h5>
-                                <i class="bi bi-file-break"></i>
-                                On this page
-                            </h5>
-                            <a class="list-group-item list-group-item-action" href="#list-item-1">About tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-2">The tonsils</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-3">What causes tonsillitis?</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-4">Treating tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-5">Chronic tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-6">Complications of tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-7">Symptoms of tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-8">Causes of tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-9">Treating tonsillitis</a>
-                            <a class="list-group-item list-group-item-action" href="#list-item-10">Self-help</a>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-7 my-3 col-md-8 col-lg-7">
-                        <h5>Was this page helpful?</h5>
-                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-hand-thumbs-up"></i></label>
-                          
-                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-hand-thumbs-down"></i></label>
-                        </div>
-                    </div>
-                    <div class="col-5 mt-3 col-md-4 col-lg-5">
-                      <a class="btn btn-primary" href="#" role="button">
-                        <i class="bi bi-arrow-up-square"></i>
-                        Back to top
-                      </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 my-3">
-                        <h5>Rate this page</h5>
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck1"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck2"><i class="bi bi-star-fill"></i></label>
-                          
-                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck3"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck4"><i class="bi bi-star-fill"></i></label>
-
-                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-                            <label class="btn btn-outline-warning" for="btncheck5"><i class="bi bi-star-fill"></i></label>
-                          </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div
+              class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#list-example"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <img
+                src="/assets/images/tonsilitis.png"
+                alt="Tonsilitis image"
+                class="img-fluid mb-4"
+              />
+              <h2 id="list-item-1"><mark>About tonsillitis</mark></h2>
+              <p>
+                Tonsillitis is inflammation of the tonsils. It's usually caused
+                by a viral infection or, less commonly, a bacterial infection.
+              </p>
+              <p>
+                Tonsillitis is a common condition in children, teenagers and
+                young adults.
+              </p>
+              <p>The symptoms of tonsillitis include:</p>
 
-        
+              <ul>
+                <li>
+                  <p>a sore throat and pain when swallowing</p>
+                </li>
+                <li>
+                  <p>earache</p>
+                </li>
+                <li>
+                  <p>high temperature (fever) over 38C (100.4F)</p>
+                </li>
+                <li>
+                  <p>coughing</p>
+                </li>
+                <li>
+                  <p>headache</p>
+                </li>
+              </ul>
+
+              <p>Symptoms usually pass within three to four days.</p>
+
+              <br />
+
+              <h2 id="list-item-2"><mark>The tonsils</mark></h2>
+              <p>
+                The tonsils are two small glands that sit on either side of the
+                throat. In young children, they help to fight germs and act as a
+                barrier against infection.
+              </p>
+              <p>
+                When the tonsils become infected, they isolate the infection and
+                stop it spreading further into the body.
+              </p>
+              <p>
+                As a child's immune system develops and gets stronger, the
+                tonsils become less important and usually shrink. In most
+                people, the body is able to fight infection without the tonsils.
+              </p>
+              <p>
+                Removal of the tonsils is usually only recommended if they're
+                causing problems, such as severe or repeated episodes of
+                tonsillitis (see below).
+              </p>
+
+              <br />
+
+              <h3 id="list-item-3"><mark>What causes tonsillitis?</mark></h3>
+              <p>
+                Most cases of tonsillitis are caused by a viral infection, such
+                as the viruses that cause the common cold or flu virus
+                (influenza).
+              </p>
+              <p>
+                Some cases can also be caused by a bacterial infection,
+                typically a strain of bacteria called group A streptococcus
+                bacteria.
+              </p>
+
+              <p>
+                These types of infections spread easily, so it's important to
+                try to avoid passing the infection on to others by:
+              </p>
+
+              <ul>
+                <li>
+                  <p>
+                    staying away from public places, such as work, school or
+                    nursery, until your GP says it's safe to return (usually
+                    after the symptoms have passed).
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    coughing and sneezing into a tissue and disposing of the
+                    tissue.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    washing hands before eating, after going to the toilet and,
+                    if possible, after coughing and sneezing.
+                  </p>
+                </li>
+              </ul>
+
+              <br />
+
+              <h2 id="list-item-4"><mark>Treating tonsillitis</mark></h2>
+              <p>
+                There's no specific treatment for tonsillitis, but you may be
+                able to reduce the symptoms by:
+              </p>
+
+              <ul>
+                <li>
+                  <p>taking paracetamol or ibuprofen to help relieve pain</p>
+                </li>
+                <li>
+                  <p>drinking plenty of fluids</p>
+                </li>
+                <li>
+                  <p>getting plenty of rest</p>
+                </li>
+              </ul>
+              <p>
+                If test results show that your tonsillitis is caused by a
+                bacterial infection, a short course of oral antibiotics may be
+                prescribed.
+              </p>
+              <p>
+                If oral antibiotics aren't effective at treating bacterial
+                tonsillitis, intravenous antibiotics (given directly into a
+                vein) may be needed in hospital.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-5"><mark>Chronic tonsillitis</mark></h2>
+              <p>
+                In most cases, tonsillitis gets better within a week. However, a
+                small number of children and adults have tonsillitis for longer,
+                or it keeps returning. This is known as chronic tonsillitis and
+                surgical treatment may be needed.
+              </p>
+              <p>
+                Surgery to remove the tonsils (a tonsillectomy) is usually only
+                recommended if:
+              </p>
+
+              <ul>
+                <li>
+                  <p>
+                    you've had several severe episodes of tonsillitis over a
+                    long period of time.
+                  </p>
+                </li>
+                <li>
+                  <p>repeated episodes are disrupting normal activities.</p>
+                </li>
+              </ul>
+
+              <br />
+
+              <h2 id="list-item-6"><mark>Chronic tonsillitis</mark></h2>
+              <p>
+                Complications of tonsillitis are rare and usually only occur if
+                it's caused by a bacterial infection. They're usually the result
+                of the infection spreading to another part of the body.
+              </p>
+              <p>Possible complications of tonsillitis include:</p>
+
+              <ul>
+                <li>
+                  <p>
+                    a middle ear infection (otitis media) - where fluid between
+                    the eardrum and inner ear becomes infected by bacteria
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    quinsy (peritonsillar abscess) - an abscess (collection of
+                    pus) that develops between one of the tonsils and the wall
+                    of the throat
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    obstructive sleep apnoea (OSA) - where the walls of the
+                    throat relax during sleep, which causes breathing
+                    difficulties and poor sleep
+                  </p>
+                </li>
+              </ul>
+
+              <p>
+                Other complications of tonsillitis are very rare and usually
+                only occur if an underlying bacterial infection is left
+                untreated. They include:
+              </p>
+
+              <ul>
+                <li>
+                  <p>
+                    scarlet fever - a condition that causes a distinctive
+                    pink-red skin rash
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    rheumatic fever - this causes widespread inflammation
+                    throughout the body, leading to symptoms such as joint pain,
+                    rashes and jerky body movements
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    glomerulonephritis - an infection (swelling) of the filters
+                    in the kidneys that can cause vomiting and a loss of
+                    appetite
+                  </p>
+                </li>
+              </ul>
+
+              <br />
+
+              <h2 id="list-item-7"><mark>Symptoms of tonsillitis</mark></h2>
+              <p>The main symptom of tonsillitis is a sore throat.</p>
+              <p>
+                Your tonsils will be red and swollen, and your throat may be
+                very painful, making swallowing difficult.
+              </p>
+              <p>
+                In some cases, the tonsils are coated or have white, pus-filled
+                spots on them.
+              </p>
+              <p>Other common symptoms of tonsillitis include:</p>
+
+              <ul>
+                <li>
+                  <p>high temperature (fever) over 38C (100.4F)</p>
+                </li>
+                <li>
+                  <p>coughing</p>
+                </li>
+                <li>
+                  <p>headache</p>
+                </li>
+                <li>
+                  <p>earache</p>
+                </li>
+                <li>
+                  <p>feeling sick</p>
+                </li>
+                <li>
+                  <p>feeling tired</p>
+                </li>
+                <li>
+                  <p>swollen, painful lymph glands in your neck</p>
+                </li>
+                <li>
+                  <p>loss of voice or changes to your voice</p>
+                </li>
+              </ul>
+
+              <p>
+                The symptoms of tonsillitis usually get better after three to
+                four days.
+              </p>
+              <p>
+                If you have tonsillitis that's caused by a viral infection, such
+                as the common cold or flu, your symptoms may be milder.
+              </p>
+              <p>
+                If your tonsillitis is caused by a bacterial infection, such as
+                a streptococcal infection, your symptoms will usually be more
+                severe and you may also have bad breath.
+              </p>
+              <p>
+                It's difficult to tell just by looking at a person's throat
+                whether they have tonsillitis as a result of a virus or a
+                bacterial infection. Tests are needed to confirm this.
+              </p>
+              <p>
+                Antibiotics may be recommended if test results show that your
+                tonsillitis is caused by a bacterial infection.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-8"><mark>Causes of tonsillitis</mark></h2>
+              <p>Most cases of tonsillitis are caused by a viral infection.</p>
+              <p>Viruses known to cause tonsillitis include:</p>
+
+              <ul>
+                <li>
+                  <p>rhinoviruses - which cause the common cold</p>
+                </li>
+                <li>
+                  <p>the influenza virus</p>
+                </li>
+                <li>
+                  <p>parainfluenza virus - which causes laryngitis and croup</p>
+                </li>
+                <li>
+                  <p>
+                    enteroviruses - which cause hand, foot and mouth disease
+                  </p>
+                </li>
+                <li>
+                  <p>adenovirus - which is a common cause of diarrhoea</p>
+                </li>
+                <li>
+                  <p>the rubeola virus - which causes measles</p>
+                </li>
+              </ul>
+
+              <p>
+                In rare cases, tonsillitis can also be caused by the
+                Epstein-Barr virus, which causes glandular fever.
+              </p>
+              <p>
+                If this is the case, you'll probably feel very ill. You'll have
+                a sore throat and the lymph glands in your throat may be
+                swollen. You may also have a fever and feel very tired.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-9"><mark>Treating tonsillitis</mark></h2>
+              <p>
+                There's no specific treatment for tonsillitis and most cases get
+                better within a week without treatment.
+              </p>
+              <p>
+                While waiting for the infection to clear up, there are a number
+                of things you can do to help relieve your symptoms (see below).
+              </p>
+              <p>
+                If your child has tonsillitis, make sure they have plenty to eat
+                and drink, even if they find it painful to swallow. Being hungry
+                and dehydrated can make other symptoms, such as headaches and
+                tiredness, worse.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-10"><mark>Self-help</mark></h2>
+              <p>
+                Over-the-counter painkillers, such as paracetamol and ibuprofen,
+                can help relieve painful symptoms such as a sore throat.
+              </p>
+              <p>
+                If treating your children with painkillers, it's important to
+                use the correct type and dosage. Younger children only need
+                small dosages. Your pharmacist can advise you about this.
+              </p>
+              <p>Children under 16 years of age shouldn't be given aspirin.</p>
+              <p>
+                Over-the-counter treatments that can soothe a sore throat, such
+                as lozenges and oral sprays, are also available. Some people
+                find that gargling with a mild antiseptic solution can also
+                relieve a sore throat.
+              </p>
+              <p>
+                Alternatively, you could try gargling with warm, salty water.
+                Mix half a teaspoon of salt (2.5g) with a quarter of a litre
+                (eight ounces) of water. It's important not to swallow the
+                water, so this method may not be suitable for younger children.
+              </p>
+            </div>
+            <div
+              class="col-lg-3 d-none d-lg-block scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#on-this-page2"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <div id="on-this-page2" class="list-group">
+                <h5>
+                  <i class="bi bi-file-break"></i>
+                  On this page
+                </h5>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-1"
+                  >About tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-2"
+                  >The tonsils</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-3"
+                  >What causes tonsillitis?</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-4"
+                  >Treating tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-5"
+                  >Chronic tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-6"
+                  >Complications of tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-7"
+                  >Symptoms of tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-8"
+                  >Causes of tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-9"
+                  >Treating tonsillitis</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-10"
+                  >Self-help</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-7 my-3 col-md-8 col-lg-7">
+              <h5>Was this page helpful?</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio1"
+                  ><i class="bi bi-hand-thumbs-up"></i
+                ></label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio2"
+                  ><i class="bi bi-hand-thumbs-down"></i
+                ></label>
+              </div>
+            </div>
+            <div class="col-5 mt-3 col-md-4 col-lg-5">
+              <a class="btn btn-primary" href="#" role="button">
+                <i class="bi bi-arrow-up-square"></i>
+                Back to top
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 my-3">
+              <h5>Rate this page</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck1"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck2"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck3"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck4"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck5"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck5"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <!-- Footer Section -->
-          <section id="contact" class="py-5">
-              <div class="container">
-                <!-- Contact and Form Label -->
-                  <a href="/#" class="text-decoration-none"><h4><span class="badge bg-info rounded-circle">E</span> - Konsulta</h4></a>
-                  <h6>Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
-                  <p>Fill out the form below.</p>
-                  <div class="row g-5">
-                      <div class="col-md-12 col-lg-6 ">
-                        <!-- Forms -->
-                        <form>
-                          <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="email@email.com">
-                            <label for="floatingInput">Email address</label>
-                          </div>
-                          <div class="row">
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="first-name" placeholder="First Name">
-                                <label for="floatingInput">First Name</label>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="last-name" placeholder="Last Name">
-                                <label for="floatingInput">Last Name</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box"></textarea>
-                            <label for="floatingTextarea">Comments or Suggestions</label>
-                          </div>
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-info" type="button">
-                                  <i class="bi bi-send"></i>
-                                  Send
-                                </button>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-grid my-3">
-                                <button class="btn btn-danger text-black" type="button">
-                                  <i class="bi bi-x-circle"></i>
-                                  Cancel 
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                      
-                      <!-- Contacts -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Contacts</h6>
-                        <a href="https://gmail.com"><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://whatsapp.com"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://facebook.com"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://twitter.com"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
-                        <a href="https://instagram.com"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
-                      </div>
-  
-                      <!-- Legals -->
-                      <div class="col-4 col-lg-2">
-                        <h6>Legals</h6>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
-                        <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
-                      </div>
-  
-                      <!-- References -->
-                      <div class="col-4 col-lg-2">
-                        <h6>References</h6>
-                        <p><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">NHS inform</a></p>
-                        <p><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Bootstrap</a></p>
-                        <p><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Google</a></p>
-                        <p><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Youtube</a></p>
-                        <p><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Gradient Generator</a></p>
-                      </div>
+      <!-- Footer Section -->
+      <section id="contact" class="py-5">
+        <div class="container">
+          <!-- Contact and Form Label -->
+          <a class="navbar-brand fw-bold fs-5" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+          <h6 class="mt-3">
+            Help me improve this <span class="text-danger">website</span> by
+            sending a suggestion
+          </h6>
+          <p>Fill out the form below.</p>
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-6">
+              <!-- Forms -->
+              <form>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email@email.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="first-name"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInput">First Name</label>
+                    </div>
                   </div>
-  
-              </div>
-  
-              <!-- Horizontal Line -->
-              <hr>
-              <!-- Alrights Reserved Text -->
-              <p class="text-center">Allrights reserved &copy; <span class="badge rounded-circle bg-info">E</span> - Konsulta <span class="text-primary">Medical</span> 2023</p>
-              
-          </section>
-          <!-- End of Footer Section -->
-      </footer>
+                  <div class="col">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="last-name"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInput">Last Name</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="suggestion-box"
+                  ></textarea>
+                  <label for="floatingTextarea">Comments or Suggestions</label>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-info" type="button">Send</button>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-grid my-3">
+                      <button class="btn btn-danger text-black" type="button">
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
 
+            <!-- Contacts -->
+            <div class="col-4 col-lg-2">
+              <h6>Contacts</h6>
+              <a href="https://gmail.com"
+                ><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://whatsapp.com"
+                ><i class="bi bi-whatsapp" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://facebook.com"
+                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
+              ></a>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-</body>
+            <!-- Legals -->
+            <div class="col-4 col-lg-2">
+              <h6>Legals</h6>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Terms and Condition</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Privacy Policy</a
+                >
+              </p>
+              <p>
+                <a
+                  href="#"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  >Accessibility Policy</a
+                >
+              </p>
+            </div>
+
+            <!-- References -->
+            <div class="col-4 col-lg-2">
+              <h6>References</h6>
+              <p>
+                <a
+                  href="https://nhsinform.scot"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >NHS inform</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://getbootstrap.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Bootstrap</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://google.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Google</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://youtube.com"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Youtube</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://cssgradient.io"
+                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                  target="_blank"
+                  >Gradient Generator</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr />
+        <!-- Alrights Reserved Text -->
+        <p class="text-center">
+          Allrights reserved &copy;
+          <span class="badge rounded-circle bg-info">E</span> - Konsulta
+          <span class="text-primary">Medical</span> 2023
+        </p>
+      </section>
+      <!-- End of Footer Section -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
