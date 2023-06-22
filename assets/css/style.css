@@ -1,17 +1,15 @@
 body {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+    background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );
 }
 
-/* Header */
-/* #header {
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
-} */
+/* Header and Contact */
+#header,
+#contact {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
 
+/* Hero */
 #hero {
     background: url(/assets/images/heroimage.jpg) center center/ cover;
 }
@@ -25,20 +23,12 @@ body {
     height: 300px;
 }
 
-.main-card {
-    transition: 0.3s;
-}
-
 .main-card:hover {
-    transform: scale(1.07);
-    transition: 0.3s;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
-/* Footer contacts */
-#contact {
-    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
-}
-
+/* Symptoms A to Z links */
 .atoz-links a {
     text-decoration: none;
     text-transform: uppercase;
@@ -60,5 +50,22 @@ body {
 }
 
 .disabled-letter a {
-    color: red;
+    color: rgb(156, 0, 0);
+}
+
+/* Icons */
+.bi-envelope-at-fill,
+.bi-whatsapp,
+.bi-facebook,
+.bi-twitter,
+.bi-instagram {
+    color: black
+}
+
+.bi-envelope-at-fill:hover,
+.bi-whatsapp:hover,
+.bi-facebook:hover,
+.bi-twitter:hover,
+.bi-instagram:hover {
+    opacity: 0.5;
 }
