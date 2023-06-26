@@ -5,17 +5,32 @@ body {
 /* Header and Contact */
 #header,
 #contact {
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.navbar-brand {
+    background-image: radial-gradient( circle farthest-corner at -4.5% 34.3%,  rgba(13,20,174,1) 0%, rgba(243,165,140,1) 90% );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 /* Hero */
 #hero {
     background: url(/assets/images/heroimage.jpg) center center/ cover;
+    height: 90vh;
+    overflow: hidden;
 }
 
 .hero-message {
     height: 90vh;
+}
+
+.hero-text {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 /* Main Content Cards */
@@ -68,4 +83,13 @@ body {
 .bi-twitter:hover,
 .bi-instagram:hover {
     opacity: 0.5;
+}
+
+
+
+/* Responsive */
+@media only screen and (min-width: 992px) {
+    .card-translate {
+        transform: translateY(-180px);
+    }  
 }

@@ -28,100 +28,74 @@
       <section id="header">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand fw-bold fs-5" href="/#"
-              ><img
-                src="/assets/images/logobrand.png"
-                alt=""
-                style="width: 50px"
-              />E-Konsulta</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="nav nav-pills nav-fill p-1 bg-transparent rounded-1 ms-auto d-flex flex-column flex-lg-row"
-                id="pillNav2"
-                role="tablist"
-                style="
-                  --bs-nav-link-color: var(--bs-white);
-                  --bs-nav-pills-link-active-color: var(--bs-primary);
-                  --bs-nav-pills-link-active-bg: var(--bs-white);
-                "
-              >
-                <li class="nav-item" role="presentation">
-                  <a href="/index.html" class="nav-link">
-                    <button
-                      class="nav-link d-flex flex-column align-items-center justify-content-center"
-                      id="home-tab2"
-                      data-bs-toggle="tab"
-                      type="button"
-                      role="tab"
-                      aria-selected="true"
-                    >
-                      <i class="bi bi-house"></i>
-                      Home
-                    </button>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="/#faqs" class="nav-link">
-                    <button
-                      class="nav-link d-flex flex-column align-items-center justify-content-center"
-                      id="faqs-tab2"
-                      data-bs-toggle="tab"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <i class="bi bi-patch-question"></i>
-                      FAQs
-                    </button>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="/#about" class="nav-link">
-                    <button
-                      class="nav-link d-flex flex-column align-items-center justify-content-center"
-                      id="about-tab2"
-                      data-bs-toggle="tab"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <i class="bi bi-file-person"></i>
-                      About
-                    </button>
-                  </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a href="#contact" class="nav-link">
-                    <button
-                      class="nav-link d-flex flex-column align-items-center justify-content-center"
-                      id="contacts-tab2"
-                      data-bs-toggle="tab"
-                      type="button"
-                      role="tab"
-                      aria-selected="false"
-                    >
-                      <i class="bi bi-person-rolodex"></i>
-                      Contacts
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <!-- Navbar toggler button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Logo -->
+              <a class="navbar-brand fw-bold fs-5 m-0" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+              <!-- Search Button Toggler modal -->
+              <button type="button" class="btn btn-transparent d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal" style="font-size: 1.5rem;">
+                <i class="bi bi-search"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search your symptoms" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-info">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navbar toggler -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav nav-pills nav-fill p-1 rounded-1 d-flex flex-column flex-lg-row ms-auto" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                      <li class="nav-item" role="presentation">
+                      <a href="/#" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+                            <i class="bi bi-house me-3 d-lg-none"></i>
+                            Home
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="/#faqs" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-question-circle me-3 d-lg-none"></i>
+                            FAQs
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="/#about" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-file-earmark-person me-3 d-lg-none"></i>
+                            About
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="#contact" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-person-rolodex me-3 d-lg-none"></i>
+                            Contacts
+                          </button>
+                      </a>
+                      </li>
+                  </ul>
+              </div>
           </div>
         </nav>
       </section>
+      <!-- End of Navbar -->
     </header>
 
     <main>
@@ -689,180 +663,96 @@
 
     <footer>
       <!-- Footer Section -->
-      <section id="contact" class="py-5">
-        <div class="container">
-          <!-- Contact and Form Label -->
-          <a class="navbar-brand fw-bold fs-5" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
-          <h6 class="mt-3">
-            Help me improve this <span class="text-danger">website</span> by
-            sending a suggestion
-          </h6>
-          <p>Fill out the form below.</p>
-          <div class="row g-5">
-            <div class="col-md-12 col-lg-6">
-              <!-- Forms -->
-              <form>
-                <div class="form-floating mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="email@email.com"
-                  />
-                  <label for="floatingInput">Email address</label>
+        <section id="contact" class="pt-3 pt-md-3 pt-lg-5">
+            <div class="container">
+              <!-- Contact and Form Label -->
+                <a class="navbar-brand fw-bold fs-5" href="#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+                <h6 class="mt-3">Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
+                <p>Fill out the form below.</p>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 ">
+                      <!-- Forms -->
+                      <form class="needs-validation mb-3 mb-md-3 mb-lg-0">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                              <label for="floatingInput">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                              <label for="floatingInput">Last Name</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box" required></textarea>
+                          <label for="floatingTextarea">Comments or Suggestions</label>
+                        </div>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="d-grid my-3">
+                              <button class="btn btn-info fw-bold" type="submit">
+                                Send
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                       <!-- Legals -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">Legals</h6>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
+                    </div>
+
+                    <!-- References -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">References</h6>
+                      <p class="small"><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">NHS inform</a></p>
+                      <p class="small"><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Bootstrap</a></p>
+                      <p class="small"><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Google</a></p>
+                      <p class="small"><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Youtube</a></p>
+                      <p class="small"><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Gradient Generator</a></p>
+                    </div>
+                    
+                    <!-- Contacts -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">Contacts</h6>
+                      <p class="small"><a href="tel:911" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        <i class="bi bi-telephone-fill"></i>
+                        Phone
+                      </a></p>
+                      <p class="small"><a href="mailto:randomemail@gmail.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        <i class="bi bi-envelope-fill"></i>
+                        Email
+                      </a></p>
+
+                      <h6 class="mt-5 fw-bold">Socials</h6>
+                      <a href="https://facebook.com" title="Facebook"><i class="bi bi-facebook me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                      <a href="https://twitter.com" title="Twitter"><i class="bi bi-twitter me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                      <a href="https://instagram.com" title="Instagram"><i class="bi bi-instagram me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="row">
                   <div class="col">
-                    <div class="form-floating mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="first-name"
-                        placeholder="First Name"
-                      />
-                      <label for="floatingInput">First Name</label>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-floating mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="last-name"
-                        placeholder="Last Name"
-                      />
-                      <label for="floatingInput">Last Name</label>
-                    </div>
+                    <hr>
+                    <p class="text-center">Allrights reserved &copy; <img src="/assets/images/logobrand.png" alt="logobrand" style="width: 20px;">E-Konsulta Medical 2023</p>
                   </div>
                 </div>
-                <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="suggestion-box"
-                  ></textarea>
-                  <label for="floatingTextarea">Comments or Suggestions</label>
-                </div>
-                <div class="row">
-                  <div class="col-3">
-                    <div class="d-grid my-3">
-                      <button class="btn btn-info" type="button">Send</button>
-                    </div>
-                  </div>
-                  <div class="col-3">
-                    <div class="d-grid my-3">
-                      <button class="btn btn-danger text-black" type="button">
-                        Cancel
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-
-            <!-- Contacts -->
-            <div class="col-4 col-lg-2">
-              <h6>Contacts</h6>
-              <a href="https://gmail.com"
-                ><i class="bi bi-envelope-at-fill" style="font-size: 1.5rem"></i
-              ></a>
-              <a href="https://whatsapp.com"
-                ><i class="bi bi-whatsapp" style="font-size: 1.5rem"></i
-              ></a>
-              <a href="https://facebook.com"
-                ><i class="bi bi-facebook" style="font-size: 1.5rem"></i
-              ></a>
-              <a href="https://twitter.com"
-                ><i class="bi bi-twitter" style="font-size: 1.5rem"></i
-              ></a>
-              <a href="https://instagram.com"
-                ><i class="bi bi-instagram" style="font-size: 1.5rem"></i
-              ></a>
-            </div>
-
-            <!-- Legals -->
-            <div class="col-4 col-lg-2">
-              <h6>Legals</h6>
-              <p>
-                <a
-                  href="#"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  >Terms and Condition</a
-                >
-              </p>
-              <p>
-                <a
-                  href="#"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  >Privacy Policy</a
-                >
-              </p>
-              <p>
-                <a
-                  href="#"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  >Accessibility Policy</a
-                >
-              </p>
-            </div>
-
-            <!-- References -->
-            <div class="col-4 col-lg-2">
-              <h6>References</h6>
-              <p>
-                <a
-                  href="https://nhsinform.scot"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  target="_blank"
-                  >NHS inform</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://getbootstrap.com"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  target="_blank"
-                  >Bootstrap</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://google.com"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  target="_blank"
-                  >Google</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://youtube.com"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  target="_blank"
-                  >Youtube</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://cssgradient.io"
-                  class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                  target="_blank"
-                  >Gradient Generator</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Horizontal Line -->
-        <hr />
-        <!-- Alrights Reserved Text -->
-        <p class="text-center">
-          Allrights reserved &copy;
-          <span class="badge rounded-circle bg-info">E</span> - Konsulta
-          <span class="text-primary">Medical</span> 2023
-        </p>
-      </section>
-      <!-- End of Footer Section -->
+              </div>
+        </section>
+        <!-- End of Footer Section -->
     </footer>
 
     <script
